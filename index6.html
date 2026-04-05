@@ -1,308 +1,585 @@
+<!doctype html>
 
-<!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
-            "colors": {
-                "on-secondary-fixed-variant": "#3f465c",
-                "tertiary": "#00432c",
-                "outline-variant": "#c4c6ce",
-                "inverse-surface": "#2d3133",
-                "inverse-primary": "#b4c7ed",
-                "on-error-container": "#93000a",
-                "on-tertiary": "#ffffff",
-                "surface-container-low": "#f2f4f6",
-                "on-tertiary-fixed": "#002113",
-                "on-tertiary-fixed-variant": "#005236",
-                "surface-container-high": "#e6e8ea",
-                "surface-variant": "#e0e3e5",
-                "on-primary": "#ffffff",
-                "outline": "#74777e",
-                "on-secondary": "#ffffff",
-                "tertiary-container": "#005d3e",
-                "on-secondary-container": "#5c647a",
-                "on-primary-fixed-variant": "#344767",
-                "error": "#ba1a1a",
-                "primary-container": "#3e5171",
-                "secondary": "#565e74",
-                "on-primary-fixed": "#051b39",
-                "primary-fixed-dim": "#b4c7ed",
-                "on-tertiary-container": "#4bdca0",
-                "tertiary-fixed": "#6ffbbe",
-                "secondary-fixed-dim": "#bec6e0",
-                "surface-dim": "#d8dadc",
-                "on-secondary-fixed": "#131b2e",
-                "secondary-container": "#dae2fd",
-                "surface-container-lowest": "#ffffff",
-                "on-background": "#191c1e",
-                "surface-container-highest": "#e0e3e5",
-                "on-surface": "#191c1e",
-                "on-surface-variant": "#44474e",
-                "primary": "#273a59",
-                "surface-container": "#eceef0",
-                "surface": "#f7f9fb",
-                "primary-fixed": "#d6e3ff",
-                "on-error": "#ffffff",
-                "inverse-on-surface": "#eff1f3",
-                "error-container": "#ffdad6",
-                "tertiary-fixed-dim": "#4edea3",
-                "surface-bright": "#f7f9fb",
-                "on-primary-container": "#b0c4ea",
-                "secondary-fixed": "#dae2fd",
-                "background": "#f7f9fb",
-                "surface-tint": "#4c5f80"
+            colors: {
+              "on-secondary-fixed-variant": "#3f465c",
+              tertiary: "#00432c",
+              "outline-variant": "#c4c6ce",
+              "inverse-surface": "#2d3133",
+              "inverse-primary": "#b4c7ed",
+              "on-error-container": "#93000a",
+              "on-tertiary": "#ffffff",
+              "surface-container-low": "#f2f4f6",
+              "on-tertiary-fixed": "#002113",
+              "on-tertiary-fixed-variant": "#005236",
+              "surface-container-high": "#e6e8ea",
+              "surface-variant": "#e0e3e5",
+              "on-primary": "#ffffff",
+              outline: "#74777e",
+              "on-secondary": "#ffffff",
+              "tertiary-container": "#005d3e",
+              "on-secondary-container": "#5c647a",
+              "on-primary-fixed-variant": "#344767",
+              error: "#ba1a1a",
+              "primary-container": "#3e5171",
+              secondary: "#565e74",
+              "on-primary-fixed": "#051b39",
+              "primary-fixed-dim": "#b4c7ed",
+              "on-tertiary-container": "#4bdca0",
+              "tertiary-fixed": "#6ffbbe",
+              "secondary-fixed-dim": "#bec6e0",
+              "surface-dim": "#d8dadc",
+              "on-secondary-fixed": "#131b2e",
+              "secondary-container": "#dae2fd",
+              "surface-container-lowest": "#ffffff",
+              "on-background": "#191c1e",
+              "surface-container-highest": "#e0e3e5",
+              "on-surface": "#191c1e",
+              "on-surface-variant": "#44474e",
+              primary: "#273a59",
+              "surface-container": "#eceef0",
+              surface: "#f7f9fb",
+              "primary-fixed": "#d6e3ff",
+              "on-error": "#ffffff",
+              "inverse-on-surface": "#eff1f3",
+              "error-container": "#ffdad6",
+              "tertiary-fixed-dim": "#4edea3",
+              "surface-bright": "#f7f9fb",
+              "on-primary-container": "#b0c4ea",
+              "secondary-fixed": "#dae2fd",
+              background: "#f7f9fb",
+              "surface-tint": "#4c5f80",
             },
-            "borderRadius": {
-                "DEFAULT": "0.125rem",
-                "lg": "0.25rem",
-                "xl": "0.5rem",
-                "full": "0.75rem"
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
             },
-            "fontFamily": {
-                "headline": ["Inter"],
-                "body": ["Inter"],
-                "label": ["Inter"]
-            }
-          }
-        }
-      }
+            fontFamily: {
+              headline: ["Inter"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
     </script>
-<style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .scrolling-content::-webkit-scrollbar {
-            width: 4px;
-        }
-        .scrolling-content::-webkit-scrollbar-track {
-            background: #1e293b;
-        }
-        .scrolling-content::-webkit-scrollbar-thumb {
-            background: #475569;
-            border-radius: 10px;
-        }
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+          "FILL" 0,
+          "wght" 400,
+          "GRAD" 0,
+          "opsz" 24;
+      }
+      .scrolling-content::-webkit-scrollbar {
+        width: 4px;
+      }
+      .scrolling-content::-webkit-scrollbar-track {
+        background: #1e293b;
+      }
+      .scrolling-content::-webkit-scrollbar-thumb {
+        background: #475569;
+        border-radius: 10px;
+      }
     </style>
-</head>
-<body class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar Shell -->
-<nav class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 backdrop-blur-xl shadow-[0px_12px_32px_rgba(25,28,30,0.04)] flex justify-between items-center px-8 h-20 w-full max-w-none">
-<div class="text-xl font-bold tracking-tighter text-[#273a59]">SeniorCare Elite</div>
-<div class="hidden md:flex items-center gap-10">
-<a class="text-[#273a59]/60 hover:text-[#273a59] transition-colors duration-200 font-['Inter'] tracking-tight" href="#">How it works</a>
-<a class="text-[#273a59]/60 hover:text-[#273a59] transition-colors duration-200 font-['Inter'] tracking-tight" href="#">Coverage Guide</a>
-<a class="text-[#273a59]/60 hover:text-[#273a59] transition-colors duration-200 font-['Inter'] tracking-tight" href="#">FAQ</a>
-</div>
-<div class="flex items-center gap-4">
-<button class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition-all active:scale-95">Get Help</button>
-<span class="material-symbols-outlined text-[#273a59] cursor-pointer" data-icon="account_circle">account_circle</span>
-</div>
-</nav>
-<main class="pt-20 min-h-screen flex flex-col md:flex-row">
-<!-- LEFT SIDE: The Form Canvas -->
-<section class="w-full md:w-[40%] bg-surface-container-lowest p-8 md:p-16 flex flex-col justify-center sticky top-20 h-[calc(100vh-80px)]">
-<div class="max-w-md mx-auto w-full">
-<header class="mb-12">
-<div class="flex items-center justify-between mb-4">
-<span class="text-xs font-label uppercase tracking-widest text-on-surface-variant font-semibold">Step 2 of 5</span>
-<span class="text-xs text-primary font-medium">40% Complete</span>
-</div>
-<div class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden">
-<div class="bg-primary h-full w-[40%]"></div>
-</div>
-</header>
-<div class="space-y-10">
-<h1 class="text-3xl font-headline font-extrabold tracking-tight text-primary leading-tight">What is your current health status?</h1>
-<form id="leadForm" class="space-y-12" method="POST" action="https://leats.app.n8n.cloud/webhook/lead-capture" novalidate>
-<input type="hidden" name="postalCode" value="non-renseigne"/>
-<input type="hidden" name="currentMutuelle" value="non-renseignee"/>
-<input type="hidden" name="currentContribution" value="non-renseignee"/>
-<input type="hidden" name="fullName" value="non-renseigne"/>
-<input type="hidden" name="phone" value="non-renseigne"/>
-<input type="hidden" name="email" value="non-renseigne@example.com"/>
-<input type="hidden" name="consent" value="true"/>
-<div class="relative group">
-<input class="block w-full px-0 py-3 text-lg bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-all peer" id="age" name="ageRange" placeholder=" " type="number" required/>
-<label class="absolute text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6" for="age">What is your age?</label>
-</div>
-<div class="space-y-4">
-<p class="text-sm font-label uppercase tracking-widest text-on-surface-variant">Lifestyle Details</p>
-<label class="flex items-center group cursor-pointer">
-<div class="relative flex items-center justify-center">
-<input class="peer appearance-none h-5 w-5 border-2 border-outline-variant rounded-md checked:bg-primary checked:border-primary transition-all cursor-pointer" type="checkbox" name="optique" value="eleve"/>
-<span class="material-symbols-outlined absolute text-white opacity-0 peer-checked:opacity-100 text-sm pointer-events-none" style="font-variation-settings: 'wght' 700;">check</span>
-</div>
-<span class="ml-3 text-on-surface font-medium group-hover:text-primary transition-colors">I am a frequent smoker</span>
-</label>
-<label class="flex items-center group cursor-pointer">
-<div class="relative flex items-center justify-center">
-<input class="peer appearance-none h-5 w-5 border-2 border-outline-variant rounded-md checked:bg-primary checked:border-primary transition-all cursor-pointer" type="checkbox" name="dentaire" value="eleve"/>
-<span class="material-symbols-outlined absolute text-white opacity-0 peer-checked:opacity-100 text-sm pointer-events-none" style="font-variation-settings: 'wght' 700;">check</span>
-</div>
-<span class="ml-3 text-on-surface font-medium group-hover:text-primary transition-colors">I require regular dental care</span>
-</label>
-</div>
-<div class="pt-4">
-<button id="submitBtn" type="submit" class="w-full bg-gradient-to-br from-primary to-primary-container text-white py-4 rounded-lg font-bold shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-all flex items-center justify-center gap-2">
-                                Continue Selection
-                                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
-</button>
-</div>
-<div id="formError" class="hidden rounded-xl bg-error-container text-on-error-container p-3 text-sm font-medium"></div>
-</form>
-<div id="successMessage" class="hidden mt-4 rounded-2xl bg-secondary-container p-5 text-on-secondary-container">
-<h3 class="text-lg font-bold text-primary mb-2">Merci, votre demande a bien ete envoyee.</h3>
-<p class="text-sm">Un conseiller mutuelle senior vous contactera rapidement pour les prochaines etapes.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- RIGHT SIDE: Results Canvas -->
-<section class="w-full md:w-[60%] bg-[#191c1e] text-white p-8 md:p-12 overflow-y-auto scrolling-content h-[calc(100vh-80px)]">
-<div class="max-w-3xl mx-auto space-y-12">
-<div class="flex justify-between items-end">
-<div>
-<h2 class="text-xl font-headline font-bold text-surface-variant">Recommended for you</h2>
-<p class="text-on-surface-variant text-sm mt-1">Based on your current age and profile.</p>
-</div>
-<div class="text-right">
-<span class="text-xs uppercase tracking-tighter text-on-surface-variant">Last updated</span>
-<p class="text-sm font-medium">Just now</p>
-</div>
-</div>
-<!-- Insurance Cards List -->
-<div class="space-y-8">
-<!-- Premium Card 1 -->
-<article class="bg-[#2d3133] rounded-xl p-8 border border-white/5 hover:border-primary/30 transition-all group relative overflow-hidden">
-<div class="absolute top-0 right-0 p-4">
-<span class="bg-tertiary-container text-tertiary text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest">Top Rated</span>
-</div>
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
-<div class="space-y-4">
-<h3 class="text-2xl font-bold tracking-tight">AXA Senior Elite</h3>
-<div class="flex gap-4">
-<div class="flex flex-col">
-<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Coverage Score</span>
-<span class="text-lg font-medium text-tertiary-fixed-dim">98%</span>
-</div>
-<div class="flex flex-col">
-<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Savings</span>
-<span class="text-lg font-medium text-primary-fixed-dim">€142/year</span>
-</div>
-</div>
-<div class="flex gap-2 flex-wrap">
-<span class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded">Unlimited Optical</span>
-<span class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded">No Wait Period</span>
-</div>
-</div>
-<div class="text-right flex flex-col items-end">
-<span class="text-4xl font-headline font-extrabold tracking-tighter">€48<span class="text-sm font-normal text-on-surface-variant">/mo</span></span>
-<button class="mt-4 bg-white text-[#191c1e] px-6 py-2 rounded-lg font-bold text-sm hover:bg-surface-container-high transition-colors">View Details</button>
-</div>
-</div>
-</article>
-<!-- Premium Card 2 -->
-<article class="bg-[#2d3133] rounded-xl p-8 border border-white/5 hover:border-primary/30 transition-all group relative">
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
-<div class="space-y-4">
-<h3 class="text-2xl font-bold tracking-tight">Generali Comfort</h3>
-<div class="flex gap-4">
-<div class="flex flex-col">
-<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Coverage Score</span>
-<span class="text-lg font-medium text-tertiary-fixed-dim">92%</span>
-</div>
-<div class="flex flex-col">
-<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Savings</span>
-<span class="text-lg font-medium text-primary-fixed-dim">€110/year</span>
-</div>
-</div>
-<div class="flex gap-2 flex-wrap">
-<span class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded">Premium Dental</span>
-<span class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded">Home Care Incl.</span>
-</div>
-</div>
-<div class="text-right flex flex-col items-end">
-<span class="text-4xl font-headline font-extrabold tracking-tighter">€39<span class="text-sm font-normal text-on-surface-variant">/mo</span></span>
-<button class="mt-4 bg-white/10 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors">View Details</button>
-</div>
-</div>
-</article>
-<!-- Premium Card 3 -->
-<article class="bg-[#2d3133] rounded-xl p-8 border border-white/5 hover:border-primary/30 transition-all group relative">
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
-<div class="space-y-4">
-<h3 class="text-2xl font-bold tracking-tight">SwissLife Prime</h3>
-<div class="flex gap-4">
-<div class="flex flex-col">
-<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Coverage Score</span>
-<span class="text-lg font-medium text-tertiary-fixed-dim">95%</span>
-</div>
-<div class="flex flex-col">
-<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Savings</span>
-<span class="text-lg font-medium text-primary-fixed-dim">€95/year</span>
-</div>
-</div>
-<div class="flex gap-2 flex-wrap">
-<span class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded">Global Assistance</span>
-</div>
-</div>
-<div class="text-right flex flex-col items-end">
-<span class="text-4xl font-headline font-extrabold tracking-tighter">€42<span class="text-sm font-normal text-on-surface-variant">/mo</span></span>
-<button class="mt-4 bg-white/10 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors">View Details</button>
-</div>
-</div>
-</article>
-<!-- Premium Card 4 -->
-<article class="bg-[#2d3133] rounded-xl p-8 border border-white/5 hover:border-primary/30 transition-all group relative opacity-50 grayscale hover:grayscale-0 hover:opacity-100">
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
-<div class="space-y-4">
-<h3 class="text-2xl font-bold tracking-tight">Allianz Silver</h3>
-<div class="flex gap-4">
-<div class="flex flex-col">
-<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Coverage Score</span>
-<span class="text-lg font-medium text-tertiary-fixed-dim">88%</span>
-</div>
-<div class="flex flex-col">
-<span class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider">Savings</span>
-<span class="text-lg font-medium text-primary-fixed-dim">€60/year</span>
-</div>
-</div>
-</div>
-<div class="text-right flex flex-col items-end">
-<span class="text-4xl font-headline font-extrabold tracking-tighter">€35<span class="text-sm font-normal text-on-surface-variant">/mo</span></span>
-<button class="mt-4 bg-white/10 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors">View Details</button>
-</div>
-</div>
-</article>
-</div>
-<div class="p-12 text-center">
-<p class="text-on-surface-variant text-sm max-w-sm mx-auto italic font-light">More results loading as you refine your profile on the left.</p>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer Shell -->
-<footer class="bg-[#f2f4f6] w-full py-12 flex flex-col md:flex-row justify-between items-center px-12 border-t border-[#c4c6ce]/15 z-10 relative">
-<div class="text-[#273a59]/40 text-[0.75rem] font-['Inter'] uppercase tracking-widest mb-6 md:mb-0">
-                        © 2024 Senior Editorial Excellence. Tous droits reserves.
+  </head>
+  <body
+    class="bg-surface font-body text-on-surface selection:bg-primary-container selection:text-on-primary-container"
+  >
+    <!-- TopNavBar Shell -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-[#f7f9fb]/80 backdrop-blur-xl shadow-[0px_12px_32px_rgba(25,28,30,0.04)] flex justify-between items-center px-8 h-20 w-full max-w-none"
+    >
+      <div class="text-xl font-bold tracking-tighter text-[#273a59]">
+        SeniorCare Elite
+      </div>
+      <div class="hidden md:flex items-center gap-10">
+        <a
+          class="text-[#273a59]/60 hover:text-[#273a59] transition-colors duration-200 font-['Inter'] tracking-tight"
+          href="#"
+          >How it works</a
+        >
+        <a
+          class="text-[#273a59]/60 hover:text-[#273a59] transition-colors duration-200 font-['Inter'] tracking-tight"
+          href="#"
+          >Coverage Guide</a
+        >
+        <a
+          class="text-[#273a59]/60 hover:text-[#273a59] transition-colors duration-200 font-['Inter'] tracking-tight"
+          href="#"
+          >FAQ</a
+        >
+      </div>
+      <div class="flex items-center gap-4">
+        <button
+          class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition-all active:scale-95"
+        >
+          Get Help
+        </button>
+        <span
+          class="material-symbols-outlined text-[#273a59] cursor-pointer"
+          data-icon="account_circle"
+          >account_circle</span
+        >
+      </div>
+    </nav>
+    <main class="pt-20 min-h-screen flex flex-col md:flex-row">
+      <!-- LEFT SIDE: The Form Canvas -->
+      <section
+        class="w-full md:w-[40%] bg-surface-container-lowest p-8 md:p-16 flex flex-col justify-center sticky top-20 h-[calc(100vh-80px)]"
+      >
+        <div class="max-w-md mx-auto w-full">
+          <header class="mb-12">
+            <div class="flex items-center justify-between mb-4">
+              <span
+                class="text-xs font-label uppercase tracking-widest text-on-surface-variant font-semibold"
+                >Step 2 of 5</span
+              >
+              <span class="text-xs text-primary font-medium">40% Complete</span>
+            </div>
+            <div
+              class="w-full bg-surface-container-high h-1 rounded-full overflow-hidden"
+            >
+              <div class="bg-primary h-full w-[40%]"></div>
+            </div>
+          </header>
+          <div class="space-y-10">
+            <h1
+              class="text-3xl font-headline font-extrabold tracking-tight text-primary leading-tight"
+            >
+              What is your current health status?
+            </h1>
+            <form
+              id="leadForm"
+              class="space-y-12"
+              method="POST"
+              action="https://leats.app.n8n.cloud/webhook/lead-capture"
+              novalidate
+            >
+              <input type="hidden" name="postalCode" value="non-renseigne" />
+              <input
+                type="hidden"
+                name="currentMutuelle"
+                value="non-renseignee"
+              />
+              <input
+                type="hidden"
+                name="currentContribution"
+                value="non-renseignee"
+              />
+              <input type="hidden" name="fullName" value="non-renseigne" />
+              <input type="hidden" name="phone" value="non-renseigne" />
+              <input
+                type="hidden"
+                name="email"
+                value="non-renseigne@example.com"
+              />
+              <input type="hidden" name="consent" value="true" />
+              <div class="relative group">
+                <input
+                  class="block w-full px-0 py-3 text-lg bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary transition-all peer"
+                  id="age"
+                  name="ageRange"
+                  placeholder=" "
+                  type="number"
+                  required
+                />
+                <label
+                  class="absolute text-on-surface-variant duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-primary peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  for="age"
+                  >What is your age?</label
+                >
+              </div>
+              <div class="space-y-4">
+                <p
+                  class="text-sm font-label uppercase tracking-widest text-on-surface-variant"
+                >
+                  Lifestyle Details
+                </p>
+                <label class="flex items-center group cursor-pointer">
+                  <div class="relative flex items-center justify-center">
+                    <input
+                      class="peer appearance-none h-5 w-5 border-2 border-outline-variant rounded-md checked:bg-primary checked:border-primary transition-all cursor-pointer"
+                      type="checkbox"
+                      name="optique"
+                      value="eleve"
+                    />
+                    <span
+                      class="material-symbols-outlined absolute text-white opacity-0 peer-checked:opacity-100 text-sm pointer-events-none"
+                      style="font-variation-settings: &quot;wght&quot; 700"
+                      >check</span
+                    >
+                  </div>
+                  <span
+                    class="ml-3 text-on-surface font-medium group-hover:text-primary transition-colors"
+                    >I am a frequent smoker</span
+                  >
+                </label>
+                <label class="flex items-center group cursor-pointer">
+                  <div class="relative flex items-center justify-center">
+                    <input
+                      class="peer appearance-none h-5 w-5 border-2 border-outline-variant rounded-md checked:bg-primary checked:border-primary transition-all cursor-pointer"
+                      type="checkbox"
+                      name="dentaire"
+                      value="eleve"
+                    />
+                    <span
+                      class="material-symbols-outlined absolute text-white opacity-0 peer-checked:opacity-100 text-sm pointer-events-none"
+                      style="font-variation-settings: &quot;wght&quot; 700"
+                      >check</span
+                    >
+                  </div>
+                  <span
+                    class="ml-3 text-on-surface font-medium group-hover:text-primary transition-colors"
+                    >I require regular dental care</span
+                  >
+                </label>
+              </div>
+              <div class="pt-4">
+                <button
+                  id="submitBtn"
+                  type="submit"
+                  class="w-full bg-gradient-to-br from-primary to-primary-container text-white py-4 rounded-lg font-bold shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-all flex items-center justify-center gap-2"
+                >
+                  Continue Selection
+                  <span
+                    class="material-symbols-outlined"
+                    data-icon="arrow_forward"
+                    >arrow_forward</span
+                  >
+                </button>
+              </div>
+              <div
+                id="formError"
+                class="hidden rounded-xl bg-error-container text-on-error-container p-3 text-sm font-medium"
+              ></div>
+            </form>
+            <div
+              id="successMessage"
+              class="hidden mt-4 rounded-2xl bg-secondary-container p-5 text-on-secondary-container"
+            >
+              <h3 class="text-lg font-bold text-primary mb-2">
+                Merci, votre demande a bien ete envoyee.
+              </h3>
+              <p class="text-sm">
+                Un conseiller mutuelle senior vous contactera rapidement pour
+                les prochaines etapes.
+              </p>
+            </div>
+          </div>
         </div>
-<div class="flex gap-8">
-<a class="text-[#273a59]/40 hover:text-[#273a59] transition-all duration-300 text-[0.75rem] font-['Inter'] uppercase tracking-widest" href="#">Politique de confidentialite</a>
-<a class="text-[#273a59]/40 hover:text-[#273a59] transition-all duration-300 text-[0.75rem] font-['Inter'] uppercase tracking-widest" href="#">Conditions d'utilisation</a>
-<a class="text-[#273a59]/40 hover:text-[#273a59] transition-all duration-300 text-[0.75rem] font-['Inter'] uppercase tracking-widest" href="#">Mentions assurance</a>
-</div>
-</footer>
-<script>
-    (function () {
+      </section>
+      <!-- RIGHT SIDE: Results Canvas -->
+      <section
+        class="w-full md:w-[60%] bg-[#191c1e] text-white p-8 md:p-12 overflow-y-auto scrolling-content h-[calc(100vh-80px)]"
+      >
+        <div class="max-w-3xl mx-auto space-y-12">
+          <div class="flex justify-between items-end">
+            <div>
+              <h2 class="text-xl font-headline font-bold text-surface-variant">
+                Recommended for you
+              </h2>
+              <p class="text-on-surface-variant text-sm mt-1">
+                Based on your current age and profile.
+              </p>
+            </div>
+            <div class="text-right">
+              <span
+                class="text-xs uppercase tracking-tighter text-on-surface-variant"
+                >Last updated</span
+              >
+              <p class="text-sm font-medium">Just now</p>
+            </div>
+          </div>
+          <!-- Insurance Cards List -->
+          <div class="space-y-8">
+            <!-- Premium Card 1 -->
+            <article
+              class="bg-[#2d3133] rounded-xl p-8 border border-white/5 hover:border-primary/30 transition-all group relative overflow-hidden"
+            >
+              <div class="absolute top-0 right-0 p-4">
+                <span
+                  class="bg-tertiary-container text-tertiary text-[10px] px-3 py-1 rounded-full font-bold uppercase tracking-widest"
+                  >Top Rated</span
+                >
+              </div>
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between gap-8"
+              >
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold tracking-tight">
+                    AXA Senior Elite
+                  </h3>
+                  <div class="flex gap-4">
+                    <div class="flex flex-col">
+                      <span
+                        class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Coverage Score</span
+                      >
+                      <span class="text-lg font-medium text-tertiary-fixed-dim"
+                        >98%</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Savings</span
+                      >
+                      <span class="text-lg font-medium text-primary-fixed-dim"
+                        >€142/year</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex gap-2 flex-wrap">
+                    <span
+                      class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded"
+                      >Unlimited Optical</span
+                    >
+                    <span
+                      class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded"
+                      >No Wait Period</span
+                    >
+                  </div>
+                </div>
+                <div class="text-right flex flex-col items-end">
+                  <span
+                    class="text-4xl font-headline font-extrabold tracking-tighter"
+                    >€48<span
+                      class="text-sm font-normal text-on-surface-variant"
+                      >/mo</span
+                    ></span
+                  >
+                  <button
+                    class="mt-4 bg-white text-[#191c1e] px-6 py-2 rounded-lg font-bold text-sm hover:bg-surface-container-high transition-colors"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Premium Card 2 -->
+            <article
+              class="bg-[#2d3133] rounded-xl p-8 border border-white/5 hover:border-primary/30 transition-all group relative"
+            >
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between gap-8"
+              >
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold tracking-tight">
+                    Generali Comfort
+                  </h3>
+                  <div class="flex gap-4">
+                    <div class="flex flex-col">
+                      <span
+                        class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Coverage Score</span
+                      >
+                      <span class="text-lg font-medium text-tertiary-fixed-dim"
+                        >92%</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Savings</span
+                      >
+                      <span class="text-lg font-medium text-primary-fixed-dim"
+                        >€110/year</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex gap-2 flex-wrap">
+                    <span
+                      class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded"
+                      >Premium Dental</span
+                    >
+                    <span
+                      class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded"
+                      >Home Care Incl.</span
+                    >
+                  </div>
+                </div>
+                <div class="text-right flex flex-col items-end">
+                  <span
+                    class="text-4xl font-headline font-extrabold tracking-tighter"
+                    >€39<span
+                      class="text-sm font-normal text-on-surface-variant"
+                      >/mo</span
+                    ></span
+                  >
+                  <button
+                    class="mt-4 bg-white/10 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Premium Card 3 -->
+            <article
+              class="bg-[#2d3133] rounded-xl p-8 border border-white/5 hover:border-primary/30 transition-all group relative"
+            >
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between gap-8"
+              >
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold tracking-tight">
+                    SwissLife Prime
+                  </h3>
+                  <div class="flex gap-4">
+                    <div class="flex flex-col">
+                      <span
+                        class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Coverage Score</span
+                      >
+                      <span class="text-lg font-medium text-tertiary-fixed-dim"
+                        >95%</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Savings</span
+                      >
+                      <span class="text-lg font-medium text-primary-fixed-dim"
+                        >€95/year</span
+                      >
+                    </div>
+                  </div>
+                  <div class="flex gap-2 flex-wrap">
+                    <span
+                      class="text-[10px] bg-primary/20 text-primary-fixed-dim border border-primary/30 px-2 py-0.5 rounded"
+                      >Global Assistance</span
+                    >
+                  </div>
+                </div>
+                <div class="text-right flex flex-col items-end">
+                  <span
+                    class="text-4xl font-headline font-extrabold tracking-tighter"
+                    >€42<span
+                      class="text-sm font-normal text-on-surface-variant"
+                      >/mo</span
+                    ></span
+                  >
+                  <button
+                    class="mt-4 bg-white/10 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </article>
+            <!-- Premium Card 4 -->
+            <article
+              class="bg-[#2d3133] rounded-xl p-8 border border-white/5 hover:border-primary/30 transition-all group relative opacity-50 grayscale hover:grayscale-0 hover:opacity-100"
+            >
+              <div
+                class="flex flex-col md:flex-row md:items-center justify-between gap-8"
+              >
+                <div class="space-y-4">
+                  <h3 class="text-2xl font-bold tracking-tight">
+                    Allianz Silver
+                  </h3>
+                  <div class="flex gap-4">
+                    <div class="flex flex-col">
+                      <span
+                        class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Coverage Score</span
+                      >
+                      <span class="text-lg font-medium text-tertiary-fixed-dim"
+                        >88%</span
+                      >
+                    </div>
+                    <div class="flex flex-col">
+                      <span
+                        class="text-[10px] text-on-surface-variant uppercase font-bold tracking-wider"
+                        >Savings</span
+                      >
+                      <span class="text-lg font-medium text-primary-fixed-dim"
+                        >€60/year</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="text-right flex flex-col items-end">
+                  <span
+                    class="text-4xl font-headline font-extrabold tracking-tighter"
+                    >€35<span
+                      class="text-sm font-normal text-on-surface-variant"
+                      >/mo</span
+                    ></span
+                  >
+                  <button
+                    class="mt-4 bg-white/10 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-white/20 transition-colors"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="p-12 text-center">
+            <p
+              class="text-on-surface-variant text-sm max-w-sm mx-auto italic font-light"
+            >
+              More results loading as you refine your profile on the left.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Shell -->
+    <footer
+      class="bg-[#f2f4f6] w-full py-12 flex flex-col md:flex-row justify-between items-center px-12 border-t border-[#c4c6ce]/15 z-10 relative"
+    >
+      <div
+        class="text-[#273a59]/40 text-[0.75rem] font-['Inter'] uppercase tracking-widest mb-6 md:mb-0"
+      >
+        © 2024 Senior Editorial Excellence. Tous droits reserves.
+      </div>
+      <div class="flex gap-8">
+        <a
+          class="text-[#273a59]/40 hover:text-[#273a59] transition-all duration-300 text-[0.75rem] font-['Inter'] uppercase tracking-widest"
+          href="#"
+          >Politique de confidentialite</a
+        >
+        <a
+          class="text-[#273a59]/40 hover:text-[#273a59] transition-all duration-300 text-[0.75rem] font-['Inter'] uppercase tracking-widest"
+          href="#"
+          >Conditions d'utilisation</a
+        >
+        <a
+          class="text-[#273a59]/40 hover:text-[#273a59] transition-all duration-300 text-[0.75rem] font-['Inter'] uppercase tracking-widest"
+          href="#"
+          >Mentions assurance</a
+        >
+      </div>
+    </footer>
+    <script>
+      (function () {
         var form = document.getElementById("leadForm");
         if (!form) return;
 
@@ -311,43 +588,46 @@
         var successBox = document.getElementById("successMessage");
 
         function setError(message) {
-            if (!message) {
-                errorBox.textContent = "";
-                errorBox.classList.add("hidden");
-                return;
-            }
-            errorBox.textContent = message;
-            errorBox.classList.remove("hidden");
+          if (!message) {
+            errorBox.textContent = "";
+            errorBox.classList.add("hidden");
+            return;
+          }
+          errorBox.textContent = message;
+          errorBox.classList.remove("hidden");
         }
 
         form.addEventListener("submit", async function (event) {
-            event.preventDefault();
+          event.preventDefault();
 
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
-            }
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
 
-            setError("");
-            submitBtn.disabled = true;
-            submitBtn.textContent = "Envoi en cours...";
+          setError("");
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Envoi en cours...";
 
-            try {
-                var response = await fetch(form.action, {
-                    method: form.method || "POST",
-                    body: new FormData(form),
-                });
+          try {
+            var response = await fetch(form.action, {
+              method: form.method || "POST",
+              body: new FormData(form),
+            });
 
-                if (!response.ok) throw new Error("Echec de l'envoi");
+            if (!response.ok) throw new Error("Echec de l'envoi");
 
-                form.classList.add("hidden");
-                successBox.classList.remove("hidden");
-            } catch (error) {
-                setError("Une erreur est survenue pendant l'envoi. Merci de reessayer.");
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Continuer la selection";
-            }
+            form.classList.add("hidden");
+            successBox.classList.remove("hidden");
+          } catch (error) {
+            setError(
+              "Une erreur est survenue pendant l'envoi. Merci de reessayer.",
+            );
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Continuer la selection";
+          }
         });
-    })();
-</script>
-</body></html>
+      })();
+    </script>
+  </body>
+</html>

@@ -25,3 +25,14 @@ RewriteRule ^mutuelle-senior/comparatif/08/?$ /index7.html [L]
 RewriteRule ^mutuelle-senior/comparatif/09/?$ /index8.html [L]
 RewriteRule ^mutuelle-senior/comparatif/10/?$ /index9.html [L]
 RewriteRule ^mutuelle-senior/comparatif/11/?$ /index10.html [L]
+
+# Basic hardening rules (effective only if ModSecurity is enabled by host).
+<IfModule mod_security2.c>
+	SecRuleEngine On
+
+	# Block common attack signatures in query strings.
+	SecRule QUERY_STRING "(?i)(union(?:[\\s\\+]+all)?[\\s\\+]+select|select[\\s\\+].+[\\s\\+]+from|<script|onerror[\\s\\+]*=|javascript:|%3Cscript|\\.\\./|%2e%2e%2f)" "id:10010,phase:2,deny,status:403,log,msg:'Suspicious query blocked'"
+
+	# Block known scanners and exploitation tools.
+	SecRule REQUEST_HEADERS:User-Agent "(?i)(sqlmap|nikto|masscan|nmap|zgrab|acunetix|nessus)" "id:10011,phase:1,deny,status:403,log,msg:'Scanner user-agent blocked'"
+</IfModule>

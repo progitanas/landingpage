@@ -1,379 +1,673 @@
+<!doctype html>
 
-<!DOCTYPE html>
-
-<html class="scroll-smooth" lang="fr"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>SeniorGuard Editorial - Votre Sérénité après 60 ans</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-container-lowest": "#ffffff",
-                        "on-error-container": "#752121",
-                        "on-secondary-container": "#425651",
-                        "error-dim": "#4e0309",
-                        "inverse-surface": "#0c0f0f",
-                        "on-surface": "#2d3435",
-                        "on-secondary-fixed-variant": "#4c5f5b",
-                        "on-secondary-fixed": "#30433f",
-                        "on-tertiary-fixed-variant": "#536372",
-                        "primary": "#5f5e60",
-                        "on-tertiary": "#f6f9ff",
-                        "primary-fixed-dim": "#d6d3d6",
-                        "tertiary-dim": "#455564",
-                        "surface-container": "#ebeeef",
-                        "tertiary": "#516170",
-                        "on-error": "#fff7f6",
-                        "error": "#9f403d",
-                        "tertiary-container": "#dcedff",
-                        "tertiary-fixed-dim": "#cedff1",
-                        "surface-container-highest": "#dde4e5",
-                        "on-primary-container": "#525154",
-                        "surface-container-low": "#f2f4f4",
-                        "secondary": "#4f635e",
-                        "surface-tint": "#5f5e60",
-                        "on-tertiary-container": "#495867",
-                        "on-primary-fixed-variant": "#5c5b5d",
-                        "outline": "#757c7d",
-                        "secondary-container": "#d1e7e1",
-                        "on-tertiary-fixed": "#374655",
-                        "secondary-fixed-dim": "#c3d9d3",
-                        "inverse-primary": "#ffffff",
-                        "primary-container": "#e4e2e4",
-                        "surface-variant": "#dde4e5",
-                        "secondary-fixed": "#d1e7e1",
-                        "error-container": "#fe8983",
-                        "on-surface-variant": "#5a6061",
-                        "primary-dim": "#535254",
-                        "surface-container-high": "#e4e9ea",
-                        "surface": "#f9f9f9",
-                        "tertiary-fixed": "#dcedff",
-                        "on-secondary": "#e8fef7",
-                        "on-background": "#2d3435",
-                        "on-primary-fixed": "#3f3f41",
-                        "inverse-on-surface": "#9c9d9d",
-                        "surface-bright": "#f9f9f9",
-                        "outline-variant": "#adb3b4",
-                        "surface-dim": "#d4dbdd",
-                        "on-primary": "#faf7f9",
-                        "primary-fixed": "#e4e2e4",
-                        "secondary-dim": "#435752",
-                        "background": "#f9f9f9"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Noto Serif"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    }
-                },
+<html class="scroll-smooth" lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SeniorGuard Editorial - Votre Sérénité après 60 ans</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-lowest": "#ffffff",
+              "on-error-container": "#752121",
+              "on-secondary-container": "#425651",
+              "error-dim": "#4e0309",
+              "inverse-surface": "#0c0f0f",
+              "on-surface": "#2d3435",
+              "on-secondary-fixed-variant": "#4c5f5b",
+              "on-secondary-fixed": "#30433f",
+              "on-tertiary-fixed-variant": "#536372",
+              primary: "#5f5e60",
+              "on-tertiary": "#f6f9ff",
+              "primary-fixed-dim": "#d6d3d6",
+              "tertiary-dim": "#455564",
+              "surface-container": "#ebeeef",
+              tertiary: "#516170",
+              "on-error": "#fff7f6",
+              error: "#9f403d",
+              "tertiary-container": "#dcedff",
+              "tertiary-fixed-dim": "#cedff1",
+              "surface-container-highest": "#dde4e5",
+              "on-primary-container": "#525154",
+              "surface-container-low": "#f2f4f4",
+              secondary: "#4f635e",
+              "surface-tint": "#5f5e60",
+              "on-tertiary-container": "#495867",
+              "on-primary-fixed-variant": "#5c5b5d",
+              outline: "#757c7d",
+              "secondary-container": "#d1e7e1",
+              "on-tertiary-fixed": "#374655",
+              "secondary-fixed-dim": "#c3d9d3",
+              "inverse-primary": "#ffffff",
+              "primary-container": "#e4e2e4",
+              "surface-variant": "#dde4e5",
+              "secondary-fixed": "#d1e7e1",
+              "error-container": "#fe8983",
+              "on-surface-variant": "#5a6061",
+              "primary-dim": "#535254",
+              "surface-container-high": "#e4e9ea",
+              surface: "#f9f9f9",
+              "tertiary-fixed": "#dcedff",
+              "on-secondary": "#e8fef7",
+              "on-background": "#2d3435",
+              "on-primary-fixed": "#3f3f41",
+              "inverse-on-surface": "#9c9d9d",
+              "surface-bright": "#f9f9f9",
+              "outline-variant": "#adb3b4",
+              "surface-dim": "#d4dbdd",
+              "on-primary": "#faf7f9",
+              "primary-fixed": "#e4e2e4",
+              "secondary-dim": "#435752",
+              background: "#f9f9f9",
             },
-        }
+            borderRadius: {
+              DEFAULT: "0.125rem",
+              lg: "0.25rem",
+              xl: "0.5rem",
+              full: "0.75rem",
+            },
+            fontFamily: {
+              headline: ["Noto Serif"],
+              body: ["Inter"],
+              label: ["Inter"],
+            },
+          },
+        },
+      };
     </script>
-<style>
-        body { font-family: 'Inter', sans-serif; background-color: #f9f9f9; color: #2d3435; }
-        .noto-serif { font-family: 'Noto Serif', serif; }
-        .drop-cap::first-letter {
-            float: left;
-            font-family: 'Noto Serif', serif;
-            font-size: 4.5rem;
-            line-height: 1;
-            padding-right: 0.75rem;
-            color: #4f635e; /* Secondary Sage */
-        }
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f9f9f9;
+        color: #2d3435;
+      }
+      .noto-serif {
+        font-family: "Noto Serif", serif;
+      }
+      .drop-cap::first-letter {
+        float: left;
+        font-family: "Noto Serif", serif;
+        font-size: 4.5rem;
+        line-height: 1;
+        padding-right: 0.75rem;
+        color: #4f635e; /* Secondary Sage */
+      }
     </style>
-</head>
-<body class="bg-surface selection:bg-secondary-container">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-sm dark:shadow-none opacity-90">
-<div class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-serif italic text-neutral-800 dark:text-stone-100">SeniorGuard Editorial</div>
-<div class="hidden md:flex items-center space-y-0 space-x-12">
-<a class="inter text-sm font-medium tracking-wide transition-colors duration-300 text-neutral-900 dark:text-white border-b-2 border-secondary pb-1" href="#">Our Ethos</a>
-<a class="inter text-sm font-medium tracking-wide transition-colors duration-300 text-stone-500 dark:text-stone-400 hover:text-neutral-800" href="#">Insurance Stories</a>
-<a class="inter text-sm font-medium tracking-wide transition-colors duration-300 text-stone-500 dark:text-stone-400 hover:text-neutral-800" href="#">Comparison</a>
-<a class="inter text-sm font-medium tracking-wide transition-colors duration-300 text-stone-500 dark:text-stone-400 hover:text-neutral-800" href="#">Expertise</a>
-</div>
-<button class="bg-gradient-to-r from-primary to-primary-dim text-on-primary px-6 py-2.5 rounded-md inter text-sm font-medium tracking-wide transition-transform hover:scale-95 duration-200 ease-in-out">
-                Get a Quote
-            </button>
-</div>
-</nav>
-<!-- Hero Section -->
-<section class="relative pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-<div class="lg:col-span-6 z-10">
-<h1 class="noto-serif text-5xl md:text-7xl lg:text-8xl leading-[1.1] text-on-surface mb-8 tracking-tight">
-                        Pourquoi choisir une bonne mutuelle après 60 ans?
-                    </h1>
-<p class="inter text-xl md:text-2xl text-on-surface-variant font-light leading-relaxed max-w-xl">
-                        Plus qu’une assurance, un héritage de sérénité pour vous et ceux que vous aimez.
-                    </p>
-</div>
-<div class="lg:col-span-6 relative h-[600px] w-full">
-<div class="absolute inset-0 bg-surface-container-high rounded-2xl overflow-hidden shadow-2xl shadow-on-surface/5">
-<img class="w-full h-full object-cover" data-alt="elegant senior couple sitting on a sunlit terrace, laughing together with warm natural evening light and lush garden background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6yWkTMqBfeIRCV4nz4o13H9Hn4ANOk6tUtxWSNTFnmyDIw3mHNx3EqEJTa3rSI9JC8SW6bPe1GuatkZGwV_W6Bqg_aqcXeq4XrCLUQNh78bNslpPmpwcebEyzJEr790POuc21fjSi5HjEj0C6c-O-v4IHPfBvGo4PsfqQjKf4LXSVCDpgm7-VWLF22_jXAK1RbzmWC8zOmi8DN4UbPOd2GkOr0IUn0pS79RM6Q6v05nkDaqsRPT1M9PqbW9gxZklVwGXXMdbi80wI"/>
-</div>
-</div>
-</div>
-</div>
-<!-- Editorial Section 1 -->
-<section class="py-32 bg-surface">
-<div class="max-w-4xl mx-auto px-8">
-<div class="space-y-12">
-<h2 class="noto-serif text-4xl text-on-surface tracking-tight border-l-4 border-secondary pl-8">
-                    La quête de la tranquillité d'esprit
-                </h2>
-<div class="inter text-lg md:text-xl text-on-surface-variant leading-loose space-y-8 font-light">
-<p class="drop-cap">
-                        Passer le cap de la soixantaine n'est pas simplement une étape chronologique, c'est l'entrée dans une ère de redéfinition de ses priorités. Le corps change, les besoins évoluent, et la vision de l'avenir se fait plus contemplative. C’est dans ce contexte que la protection de sa santé devient le pilier central d'une vie épanouie.
-                    </p>
-<p>
-                        Une couverture santé adaptée ne se limite pas à des remboursements de soins courants. Elle représente une promesse de liberté — la liberté de ne jamais avoir à choisir entre sa santé et ses projets. Choisir une mutuelle spécifiquement conçue pour les seniors, c’est s’assurer que chaque imprévu a déjà sa solution.
-                    </p>
-<p>
-                        À travers cet editorial, nous explorons comment une approche holistique de la mutuelle peut transformer votre quotidien. Il ne s'agit plus de traiter la maladie, mais d'investir dans le bien-être durable.
-                    </p>
-</div>
-</div>
-</div>
-</section>
-<!-- Mid-page Form Section -->
-<section class="py-32 bg-surface-container-low">
-<div class="max-w-6xl mx-auto px-8">
-<div class="bg-surface-container-lowest p-12 md:p-20 rounded-xl shadow-sm">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
-<div>
-<h2 class="noto-serif text-4xl mb-6 text-on-surface">Votre recommandation personnalisée</h2>
-<p class="inter text-on-surface-variant mb-12 text-lg leading-relaxed">
-                            Nos experts analysent vos besoins pour vous proposer les solutions les plus pertinentes du marché. Sans engagement, avec une clarté totale.
-                        </p>
-<div class="space-y-8 italic text-secondary text-lg border-t border-outline-variant/20 pt-8">
-<blockquote class="relative">
-<span class="material-symbols-outlined absolute -left-8 -top-2 opacity-20 text-4xl">format_quote</span>
-                                "SeniorGuard a changé ma perception de l'assurance. J'ai enfin une couverture qui anticipe mes besoins dentaires sans complexité."
-                                <cite class="block not-italic text-sm font-bold mt-4 text-on-surface">— Dr. Marc Lepage, Expert Santé Senior</cite>
-</blockquote>
-</div>
-</div>
-<form class="space-y-8 lead-form" method="POST" action="https://leats.app.n8n.cloud/webhook/lead-capture" novalidate>
-<input type="hidden" name="postalCode" value="non-renseigne"/>
-<input type="hidden" name="currentMutuelle" value="non-renseignee"/>
-<input type="hidden" name="currentContribution" value="non-renseignee"/>
-<input type="hidden" name="optique" value="standard"/>
-<input type="hidden" name="dentaire" value="moyen"/>
-<input type="hidden" name="email" value="non-renseigne@example.com"/>
-<input type="hidden" name="consent" value="true"/>
-<div class="space-y-2">
-<label class="inter text-xs font-semibold uppercase tracking-widest text-on-surface-variant">Nom Complet</label>
-<input name="fullName" class="w-full bg-transparent border-b border-outline/30 py-4 focus:border-secondary focus:ring-0 transition-colors placeholder:text-outline-variant/50" placeholder="Jean Dupont" type="text" required/>
-</div>
-<div class="space-y-2">
-<label class="inter text-xs font-semibold uppercase tracking-widest text-on-surface-variant">Numéro de Téléphone</label>
-<input name="phone" class="w-full bg-transparent border-b border-outline/30 py-4 focus:border-secondary focus:ring-0 transition-colors placeholder:text-outline-variant/50" placeholder="+33 6 00 00 00 00" type="tel" required/>
-</div>
-<div class="space-y-2">
-<label class="inter text-xs font-semibold uppercase tracking-widest text-on-surface-variant">Âge</label>
-<input name="ageRange" class="w-full bg-transparent border-b border-outline/30 py-4 focus:border-secondary focus:ring-0 transition-colors placeholder:text-outline-variant/50" placeholder="65" type="number" required/>
-</div>
-<button class="w-full bg-secondary hover:bg-secondary-dim text-on-secondary py-5 rounded-md inter font-medium text-lg transition-all shadow-lg shadow-secondary/10" type="submit">
-                            Comparer nos recommandations
-                        </button>
-<div class="formError hidden rounded-xl bg-error-container text-on-error-container p-3 text-sm font-medium"></div>
-<div class="successMessage hidden rounded-2xl bg-secondary-container p-5 text-on-secondary-container">
-<h3 class="text-lg font-bold text-primary mb-2">Merci, votre demande a bien ete envoyee.</h3>
-<p class="text-sm">Un conseiller mutuelle senior vous contactera rapidement pour les prochaines etapes.</p>
-</div>
-</form>
-</div>
-</div>
-</div>
-</section>
-<!-- Editorial Section 2: Expertise vs Cost -->
-<section class="py-32">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-24">
-<h2 class="noto-serif text-5xl text-on-surface mb-6 italic">Expertise et cout</h2>
-<div class="w-24 h-1 bg-secondary mx-auto"></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-outline-variant/10 rounded-2xl overflow-hidden">
-<!-- Table Header -->
-<div class="hidden md:contents">
-<div class="bg-surface-container-high p-8 inter font-bold text-sm tracking-widest uppercase">Besoins Critiques</div>
-<div class="bg-surface-container-high p-8 inter font-bold text-sm tracking-widest uppercase">Contrats Standards</div>
-<div class="bg-surface-container-high p-8 inter font-bold text-sm tracking-widest uppercase text-secondary">SeniorGuard Selection</div>
-</div>
-<!-- Row 1 -->
-<div class="bg-white p-8">
-<div class="md:hidden font-bold mb-2">Besoins Critiques</div>
-<h3 class="noto-serif text-xl">Prothèses Dentaires</h3>
-<p class="text-sm text-on-surface-variant mt-2">Implants et couronnes haut de gamme.</p>
-</div>
-<div class="bg-white p-8">
-<div class="md:hidden font-bold mb-2">Contrats Standards</div>
-<span class="text-error flex items-center gap-2"><span class="material-symbols-outlined">cancel</span> Restes à charge élevés</span>
-</div>
-<div class="bg-surface-container-lowest p-8 border-l-4 border-secondary md:border-l-0">
-<div class="md:hidden font-bold mb-2 text-secondary">SeniorGuard Selection</div>
-<span class="text-secondary flex items-center gap-2 font-medium"><span class="material-symbols-outlined">check_circle</span> Prise en charge à 400%</span>
-</div>
-<!-- Row 2 -->
-<div class="bg-surface-container-low p-8">
-<div class="md:hidden font-bold mb-2">Besoins Critiques</div>
-<h3 class="noto-serif text-xl">Optique &amp; Vision</h3>
-<p class="text-sm text-on-surface-variant mt-2">Verres progressifs et montures designer.</p>
-</div>
-<div class="bg-surface-container-low p-8">
-<div class="md:hidden font-bold mb-2">Contrats Standards</div>
-<span class="text-error flex items-center gap-2"><span class="material-symbols-outlined">cancel</span> Forfait limité (100€)</span>
-</div>
-<div class="bg-surface-container-low p-8 border-l-4 border-secondary md:border-l-0">
-<div class="md:hidden font-bold mb-2 text-secondary">SeniorGuard Selection</div>
-<span class="text-secondary flex items-center gap-2 font-medium"><span class="material-symbols-outlined">check_circle</span> Forfait jusqu'à 850€</span>
-</div>
-<!-- Row 3 -->
-<div class="bg-white p-8">
-<div class="md:hidden font-bold mb-2">Besoins Critiques</div>
-<h3 class="noto-serif text-xl">Aides Auditives</h3>
-<p class="text-sm text-on-surface-variant mt-2">Appareillages de dernière génération.</p>
-</div>
-<div class="bg-white p-8">
-<div class="md:hidden font-bold mb-2">Contrats Standards</div>
-<span class="text-error flex items-center gap-2"><span class="material-symbols-outlined">cancel</span> Délais d'attente longs</span>
-</div>
-<div class="bg-surface-container-lowest p-8 border-l-4 border-secondary md:border-l-0">
-<div class="md:hidden font-bold mb-2 text-secondary">SeniorGuard Selection</div>
-<span class="text-secondary flex items-center gap-2 font-medium"><span class="material-symbols-outlined">check_circle</span> 0€ reste à charge (100% Santé+)</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Editorial Pull-Quote -->
-<section class="py-24 bg-surface-container-low overflow-hidden">
-<div class="max-w-4xl mx-auto px-8 text-center">
-<h2 class="noto-serif text-3xl md:text-5xl text-on-surface leading-snug italic">
-                "La sérénité n'est pas l'absence d'imprévus, mais la certitude d'être bien accompagné pour les traverser."
-            </h2>
-<p class="mt-8 inter text-secondary font-medium tracking-[0.2em] uppercase text-sm">Philosophie SeniorGuard</p>
-</div>
-</section>
-<!-- End-page Form Section -->
-<section class="py-32">
-<div class="max-w-xl mx-auto px-8 text-center">
-<h2 class="noto-serif text-4xl mb-4">Pret a trouver votre formule ?</h2>
-<p class="inter text-on-surface-variant mb-12">Obtenez votre comparatif personnalisé en 2 minutes.</p>
-<form class="space-y-6 text-left lead-form" method="POST" action="https://leats.app.n8n.cloud/webhook/lead-capture" novalidate>
-<input type="hidden" name="postalCode" value="non-renseigne"/>
-<input type="hidden" name="currentMutuelle" value="non-renseignee"/>
-<input type="hidden" name="currentContribution" value="non-renseignee"/>
-<input type="hidden" name="optique" value="standard"/>
-<input type="hidden" name="dentaire" value="moyen"/>
-<input type="hidden" name="email" value="non-renseigne@example.com"/>
-<input type="hidden" name="consent" value="true"/>
-<div class="bg-surface-container p-1 rounded-full flex items-center px-4">
-<span class="material-symbols-outlined text-outline p-2">person</span>
-<input name="fullName" class="w-full bg-transparent border-none focus:ring-0 py-3 text-on-surface placeholder:text-outline" placeholder="Nom Complet" type="text" required/>
-</div>
-<div class="bg-surface-container p-1 rounded-full flex items-center px-4">
-<span class="material-symbols-outlined text-outline p-2">call</span>
-<input name="phone" class="w-full bg-transparent border-none focus:ring-0 py-3 text-on-surface placeholder:text-outline" placeholder="Téléphone" type="tel" required/>
-</div>
-<div class="bg-surface-container p-1 rounded-full flex items-center px-4">
-<span class="material-symbols-outlined text-outline p-2">cake</span>
-<input name="ageRange" class="w-full bg-transparent border-none focus:ring-0 py-3 text-on-surface placeholder:text-outline" placeholder="Âge" type="number" required/>
-</div>
-<button class="w-full bg-primary hover:bg-on-surface text-on-primary py-5 rounded-full inter font-semibold transition-all" type="submit">
-                    Commencer la comparaison
-                </button>
-<div class="formError hidden rounded-xl bg-error-container text-on-error-container p-3 text-sm font-medium"></div>
-<div class="successMessage hidden rounded-2xl bg-secondary-container p-5 text-on-secondary-container">
-<h3 class="text-lg font-bold text-primary mb-2">Merci, votre demande a bien ete envoyee.</h3>
-<p class="text-sm">Un conseiller mutuelle senior vous contactera rapidement pour les prochaines etapes.</p>
-</div>
-</form>
-</div>
-</section>
-<!-- Footer -->
-<footer class="bg-stone-50 dark:bg-stone-950 py-24">
-<div class="flex flex-col items-center justify-center text-center space-y-12 max-w-4xl mx-auto px-8">
-<div class="font-serif text-2xl text-stone-800 dark:text-stone-100 italic">SeniorGuard Editorial</div>
-<div class="flex flex-wrap justify-center gap-x-12 gap-y-6">
-<a class="text-stone-500 hover:text-stone-800 transition-opacity noto-serif text-lg leading-relaxed underline decoration-secondary" href="#">Politique de confidentialite</a>
-<a class="text-stone-500 hover:text-stone-800 transition-opacity noto-serif text-lg leading-relaxed" href="#">Conditions d'utilisation</a>
-<a class="text-stone-500 hover:text-stone-800 transition-opacity noto-serif text-lg leading-relaxed" href="#">Accessibilite</a>
-<a class="text-stone-500 hover:text-stone-800 transition-opacity noto-serif text-lg leading-relaxed" href="#">Contact</a>
-</div>
-<p class="text-stone-600 dark:text-stone-400 font-light opacity-70 italic">
-                                © 2024 SeniorGuard Editorial. Une reference de protection.
+  </head>
+  <body class="bg-surface selection:bg-secondary-container">
+    <!-- TopNavBar -->
+    <nav
+      class="fixed top-0 w-full z-50 bg-white/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-sm dark:shadow-none opacity-90"
+    >
+      <div
+        class="flex justify-between items-center w-full px-8 py-6 max-w-screen-2xl mx-auto"
+      >
+        <div
+          class="text-2xl font-serif italic text-neutral-800 dark:text-stone-100"
+        >
+          SeniorGuard Editorial
+        </div>
+        <div class="hidden md:flex items-center space-y-0 space-x-12">
+          <a
+            class="inter text-sm font-medium tracking-wide transition-colors duration-300 text-neutral-900 dark:text-white border-b-2 border-secondary pb-1"
+            href="#"
+            >Our Ethos</a
+          >
+          <a
+            class="inter text-sm font-medium tracking-wide transition-colors duration-300 text-stone-500 dark:text-stone-400 hover:text-neutral-800"
+            href="#"
+            >Insurance Stories</a
+          >
+          <a
+            class="inter text-sm font-medium tracking-wide transition-colors duration-300 text-stone-500 dark:text-stone-400 hover:text-neutral-800"
+            href="#"
+            >Comparison</a
+          >
+          <a
+            class="inter text-sm font-medium tracking-wide transition-colors duration-300 text-stone-500 dark:text-stone-400 hover:text-neutral-800"
+            href="#"
+            >Expertise</a
+          >
+        </div>
+        <button
+          class="bg-gradient-to-r from-primary to-primary-dim text-on-primary px-6 py-2.5 rounded-md inter text-sm font-medium tracking-wide transition-transform hover:scale-95 duration-200 ease-in-out"
+        >
+          Get a Quote
+        </button>
+      </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-24 md:pt-48 md:pb-40 overflow-hidden">
+      <div class="max-w-7xl mx-auto px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div class="lg:col-span-6 z-10">
+            <h1
+              class="noto-serif text-5xl md:text-7xl lg:text-8xl leading-[1.1] text-on-surface mb-8 tracking-tight"
+            >
+              Pourquoi choisir une bonne mutuelle après 60 ans?
+            </h1>
+            <p
+              class="inter text-xl md:text-2xl text-on-surface-variant font-light leading-relaxed max-w-xl"
+            >
+              Plus qu’une assurance, un héritage de sérénité pour vous et ceux
+              que vous aimez.
             </p>
-</div>
-</footer>
-</section>
-<script>
-    (function () {
-        var forms = Array.prototype.slice.call(document.querySelectorAll(".lead-form"));
+          </div>
+          <div class="lg:col-span-6 relative h-[600px] w-full">
+            <div
+              class="absolute inset-0 bg-surface-container-high rounded-2xl overflow-hidden shadow-2xl shadow-on-surface/5"
+            >
+              <img
+                class="w-full h-full object-cover"
+                data-alt="elegant senior couple sitting on a sunlit terrace, laughing together with warm natural evening light and lush garden background"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6yWkTMqBfeIRCV4nz4o13H9Hn4ANOk6tUtxWSNTFnmyDIw3mHNx3EqEJTa3rSI9JC8SW6bPe1GuatkZGwV_W6Bqg_aqcXeq4XrCLUQNh78bNslpPmpwcebEyzJEr790POuc21fjSi5HjEj0C6c-O-v4IHPfBvGo4PsfqQjKf4LXSVCDpgm7-VWLF22_jXAK1RbzmWC8zOmi8DN4UbPOd2GkOr0IUn0pS79RM6Q6v05nkDaqsRPT1M9PqbW9gxZklVwGXXMdbi80wI"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Editorial Section 1 -->
+      <section class="py-32 bg-surface">
+        <div class="max-w-4xl mx-auto px-8">
+          <div class="space-y-12">
+            <h2
+              class="noto-serif text-4xl text-on-surface tracking-tight border-l-4 border-secondary pl-8"
+            >
+              La quête de la tranquillité d'esprit
+            </h2>
+            <div
+              class="inter text-lg md:text-xl text-on-surface-variant leading-loose space-y-8 font-light"
+            >
+              <p class="drop-cap">
+                Passer le cap de la soixantaine n'est pas simplement une étape
+                chronologique, c'est l'entrée dans une ère de redéfinition de
+                ses priorités. Le corps change, les besoins évoluent, et la
+                vision de l'avenir se fait plus contemplative. C’est dans ce
+                contexte que la protection de sa santé devient le pilier central
+                d'une vie épanouie.
+              </p>
+              <p>
+                Une couverture santé adaptée ne se limite pas à des
+                remboursements de soins courants. Elle représente une promesse
+                de liberté — la liberté de ne jamais avoir à choisir entre sa
+                santé et ses projets. Choisir une mutuelle spécifiquement conçue
+                pour les seniors, c’est s’assurer que chaque imprévu a déjà sa
+                solution.
+              </p>
+              <p>
+                À travers cet editorial, nous explorons comment une approche
+                holistique de la mutuelle peut transformer votre quotidien. Il
+                ne s'agit plus de traiter la maladie, mais d'investir dans le
+                bien-être durable.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Mid-page Form Section -->
+      <section class="py-32 bg-surface-container-low">
+        <div class="max-w-6xl mx-auto px-8">
+          <div
+            class="bg-surface-container-lowest p-12 md:p-20 rounded-xl shadow-sm"
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+              <div>
+                <h2 class="noto-serif text-4xl mb-6 text-on-surface">
+                  Votre recommandation personnalisée
+                </h2>
+                <p
+                  class="inter text-on-surface-variant mb-12 text-lg leading-relaxed"
+                >
+                  Nos experts analysent vos besoins pour vous proposer les
+                  solutions les plus pertinentes du marché. Sans engagement,
+                  avec une clarté totale.
+                </p>
+                <div
+                  class="space-y-8 italic text-secondary text-lg border-t border-outline-variant/20 pt-8"
+                >
+                  <blockquote class="relative">
+                    <span
+                      class="material-symbols-outlined absolute -left-8 -top-2 opacity-20 text-4xl"
+                      >format_quote</span
+                    >
+                    "SeniorGuard a changé ma perception de l'assurance. J'ai
+                    enfin une couverture qui anticipe mes besoins dentaires sans
+                    complexité."
+                    <cite
+                      class="block not-italic text-sm font-bold mt-4 text-on-surface"
+                      >— Dr. Marc Lepage, Expert Santé Senior</cite
+                    >
+                  </blockquote>
+                </div>
+              </div>
+              <form
+                class="space-y-8 lead-form"
+                method="POST"
+                action="https://leats.app.n8n.cloud/webhook/lead-capture"
+                novalidate
+              >
+                <input type="hidden" name="postalCode" value="non-renseigne" />
+                <input
+                  type="hidden"
+                  name="currentMutuelle"
+                  value="non-renseignee"
+                />
+                <input
+                  type="hidden"
+                  name="currentContribution"
+                  value="non-renseignee"
+                />
+                <input type="hidden" name="optique" value="standard" />
+                <input type="hidden" name="dentaire" value="moyen" />
+                <input
+                  type="hidden"
+                  name="email"
+                  value="non-renseigne@example.com"
+                />
+                <input type="hidden" name="consent" value="true" />
+                <div class="space-y-2">
+                  <label
+                    class="inter text-xs font-semibold uppercase tracking-widest text-on-surface-variant"
+                    >Nom Complet</label
+                  >
+                  <input
+                    name="fullName"
+                    class="w-full bg-transparent border-b border-outline/30 py-4 focus:border-secondary focus:ring-0 transition-colors placeholder:text-outline-variant/50"
+                    placeholder="Jean Dupont"
+                    type="text"
+                    required
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="inter text-xs font-semibold uppercase tracking-widest text-on-surface-variant"
+                    >Numéro de Téléphone</label
+                  >
+                  <input
+                    name="phone"
+                    class="w-full bg-transparent border-b border-outline/30 py-4 focus:border-secondary focus:ring-0 transition-colors placeholder:text-outline-variant/50"
+                    placeholder="+33 6 00 00 00 00"
+                    type="tel"
+                    required
+                  />
+                </div>
+                <div class="space-y-2">
+                  <label
+                    class="inter text-xs font-semibold uppercase tracking-widest text-on-surface-variant"
+                    >Âge</label
+                  >
+                  <input
+                    name="ageRange"
+                    class="w-full bg-transparent border-b border-outline/30 py-4 focus:border-secondary focus:ring-0 transition-colors placeholder:text-outline-variant/50"
+                    placeholder="65"
+                    type="number"
+                    required
+                  />
+                </div>
+                <button
+                  class="w-full bg-secondary hover:bg-secondary-dim text-on-secondary py-5 rounded-md inter font-medium text-lg transition-all shadow-lg shadow-secondary/10"
+                  type="submit"
+                >
+                  Comparer nos recommandations
+                </button>
+                <div
+                  class="formError hidden rounded-xl bg-error-container text-on-error-container p-3 text-sm font-medium"
+                ></div>
+                <div
+                  class="successMessage hidden rounded-2xl bg-secondary-container p-5 text-on-secondary-container"
+                >
+                  <h3 class="text-lg font-bold text-primary mb-2">
+                    Merci, votre demande a bien ete envoyee.
+                  </h3>
+                  <p class="text-sm">
+                    Un conseiller mutuelle senior vous contactera rapidement
+                    pour les prochaines etapes.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Editorial Section 2: Expertise vs Cost -->
+      <section class="py-32">
+        <div class="max-w-7xl mx-auto px-8">
+          <div class="text-center mb-24">
+            <h2 class="noto-serif text-5xl text-on-surface mb-6 italic">
+              Expertise et cout
+            </h2>
+            <div class="w-24 h-1 bg-secondary mx-auto"></div>
+          </div>
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-1px bg-outline-variant/10 rounded-2xl overflow-hidden"
+          >
+            <!-- Table Header -->
+            <div class="hidden md:contents">
+              <div
+                class="bg-surface-container-high p-8 inter font-bold text-sm tracking-widest uppercase"
+              >
+                Besoins Critiques
+              </div>
+              <div
+                class="bg-surface-container-high p-8 inter font-bold text-sm tracking-widest uppercase"
+              >
+                Contrats Standards
+              </div>
+              <div
+                class="bg-surface-container-high p-8 inter font-bold text-sm tracking-widest uppercase text-secondary"
+              >
+                SeniorGuard Selection
+              </div>
+            </div>
+            <!-- Row 1 -->
+            <div class="bg-white p-8">
+              <div class="md:hidden font-bold mb-2">Besoins Critiques</div>
+              <h3 class="noto-serif text-xl">Prothèses Dentaires</h3>
+              <p class="text-sm text-on-surface-variant mt-2">
+                Implants et couronnes haut de gamme.
+              </p>
+            </div>
+            <div class="bg-white p-8">
+              <div class="md:hidden font-bold mb-2">Contrats Standards</div>
+              <span class="text-error flex items-center gap-2"
+                ><span class="material-symbols-outlined">cancel</span> Restes à
+                charge élevés</span
+              >
+            </div>
+            <div
+              class="bg-surface-container-lowest p-8 border-l-4 border-secondary md:border-l-0"
+            >
+              <div class="md:hidden font-bold mb-2 text-secondary">
+                SeniorGuard Selection
+              </div>
+              <span class="text-secondary flex items-center gap-2 font-medium"
+                ><span class="material-symbols-outlined">check_circle</span>
+                Prise en charge à 400%</span
+              >
+            </div>
+            <!-- Row 2 -->
+            <div class="bg-surface-container-low p-8">
+              <div class="md:hidden font-bold mb-2">Besoins Critiques</div>
+              <h3 class="noto-serif text-xl">Optique &amp; Vision</h3>
+              <p class="text-sm text-on-surface-variant mt-2">
+                Verres progressifs et montures designer.
+              </p>
+            </div>
+            <div class="bg-surface-container-low p-8">
+              <div class="md:hidden font-bold mb-2">Contrats Standards</div>
+              <span class="text-error flex items-center gap-2"
+                ><span class="material-symbols-outlined">cancel</span> Forfait
+                limité (100€)</span
+              >
+            </div>
+            <div
+              class="bg-surface-container-low p-8 border-l-4 border-secondary md:border-l-0"
+            >
+              <div class="md:hidden font-bold mb-2 text-secondary">
+                SeniorGuard Selection
+              </div>
+              <span class="text-secondary flex items-center gap-2 font-medium"
+                ><span class="material-symbols-outlined">check_circle</span>
+                Forfait jusqu'à 850€</span
+              >
+            </div>
+            <!-- Row 3 -->
+            <div class="bg-white p-8">
+              <div class="md:hidden font-bold mb-2">Besoins Critiques</div>
+              <h3 class="noto-serif text-xl">Aides Auditives</h3>
+              <p class="text-sm text-on-surface-variant mt-2">
+                Appareillages de dernière génération.
+              </p>
+            </div>
+            <div class="bg-white p-8">
+              <div class="md:hidden font-bold mb-2">Contrats Standards</div>
+              <span class="text-error flex items-center gap-2"
+                ><span class="material-symbols-outlined">cancel</span> Délais
+                d'attente longs</span
+              >
+            </div>
+            <div
+              class="bg-surface-container-lowest p-8 border-l-4 border-secondary md:border-l-0"
+            >
+              <div class="md:hidden font-bold mb-2 text-secondary">
+                SeniorGuard Selection
+              </div>
+              <span class="text-secondary flex items-center gap-2 font-medium"
+                ><span class="material-symbols-outlined">check_circle</span> 0€
+                reste à charge (100% Santé+)</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Editorial Pull-Quote -->
+      <section class="py-24 bg-surface-container-low overflow-hidden">
+        <div class="max-w-4xl mx-auto px-8 text-center">
+          <h2
+            class="noto-serif text-3xl md:text-5xl text-on-surface leading-snug italic"
+          >
+            "La sérénité n'est pas l'absence d'imprévus, mais la certitude
+            d'être bien accompagné pour les traverser."
+          </h2>
+          <p
+            class="mt-8 inter text-secondary font-medium tracking-[0.2em] uppercase text-sm"
+          >
+            Philosophie SeniorGuard
+          </p>
+        </div>
+      </section>
+      <!-- End-page Form Section -->
+      <section class="py-32">
+        <div class="max-w-xl mx-auto px-8 text-center">
+          <h2 class="noto-serif text-4xl mb-4">
+            Pret a trouver votre formule ?
+          </h2>
+          <p class="inter text-on-surface-variant mb-12">
+            Obtenez votre comparatif personnalisé en 2 minutes.
+          </p>
+          <form
+            class="space-y-6 text-left lead-form"
+            method="POST"
+            action="https://leats.app.n8n.cloud/webhook/lead-capture"
+            novalidate
+          >
+            <input type="hidden" name="postalCode" value="non-renseigne" />
+            <input
+              type="hidden"
+              name="currentMutuelle"
+              value="non-renseignee"
+            />
+            <input
+              type="hidden"
+              name="currentContribution"
+              value="non-renseignee"
+            />
+            <input type="hidden" name="optique" value="standard" />
+            <input type="hidden" name="dentaire" value="moyen" />
+            <input
+              type="hidden"
+              name="email"
+              value="non-renseigne@example.com"
+            />
+            <input type="hidden" name="consent" value="true" />
+            <div
+              class="bg-surface-container p-1 rounded-full flex items-center px-4"
+            >
+              <span class="material-symbols-outlined text-outline p-2"
+                >person</span
+              >
+              <input
+                name="fullName"
+                class="w-full bg-transparent border-none focus:ring-0 py-3 text-on-surface placeholder:text-outline"
+                placeholder="Nom Complet"
+                type="text"
+                required
+              />
+            </div>
+            <div
+              class="bg-surface-container p-1 rounded-full flex items-center px-4"
+            >
+              <span class="material-symbols-outlined text-outline p-2"
+                >call</span
+              >
+              <input
+                name="phone"
+                class="w-full bg-transparent border-none focus:ring-0 py-3 text-on-surface placeholder:text-outline"
+                placeholder="Téléphone"
+                type="tel"
+                required
+              />
+            </div>
+            <div
+              class="bg-surface-container p-1 rounded-full flex items-center px-4"
+            >
+              <span class="material-symbols-outlined text-outline p-2"
+                >cake</span
+              >
+              <input
+                name="ageRange"
+                class="w-full bg-transparent border-none focus:ring-0 py-3 text-on-surface placeholder:text-outline"
+                placeholder="Âge"
+                type="number"
+                required
+              />
+            </div>
+            <button
+              class="w-full bg-primary hover:bg-on-surface text-on-primary py-5 rounded-full inter font-semibold transition-all"
+              type="submit"
+            >
+              Commencer la comparaison
+            </button>
+            <div
+              class="formError hidden rounded-xl bg-error-container text-on-error-container p-3 text-sm font-medium"
+            ></div>
+            <div
+              class="successMessage hidden rounded-2xl bg-secondary-container p-5 text-on-secondary-container"
+            >
+              <h3 class="text-lg font-bold text-primary mb-2">
+                Merci, votre demande a bien ete envoyee.
+              </h3>
+              <p class="text-sm">
+                Un conseiller mutuelle senior vous contactera rapidement pour
+                les prochaines etapes.
+              </p>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="bg-stone-50 dark:bg-stone-950 py-24">
+        <div
+          class="flex flex-col items-center justify-center text-center space-y-12 max-w-4xl mx-auto px-8"
+        >
+          <div
+            class="font-serif text-2xl text-stone-800 dark:text-stone-100 italic"
+          >
+            SeniorGuard Editorial
+          </div>
+          <div class="flex flex-wrap justify-center gap-x-12 gap-y-6">
+            <a
+              class="text-stone-500 hover:text-stone-800 transition-opacity noto-serif text-lg leading-relaxed underline decoration-secondary"
+              href="#"
+              >Politique de confidentialite</a
+            >
+            <a
+              class="text-stone-500 hover:text-stone-800 transition-opacity noto-serif text-lg leading-relaxed"
+              href="#"
+              >Conditions d'utilisation</a
+            >
+            <a
+              class="text-stone-500 hover:text-stone-800 transition-opacity noto-serif text-lg leading-relaxed"
+              href="#"
+              >Accessibilite</a
+            >
+            <a
+              class="text-stone-500 hover:text-stone-800 transition-opacity noto-serif text-lg leading-relaxed"
+              href="#"
+              >Contact</a
+            >
+          </div>
+          <p
+            class="text-stone-600 dark:text-stone-400 font-light opacity-70 italic"
+          >
+            © 2024 SeniorGuard Editorial. Une reference de protection.
+          </p>
+        </div>
+      </footer>
+    </section>
+    <script>
+      (function () {
+        var forms = Array.prototype.slice.call(
+          document.querySelectorAll(".lead-form"),
+        );
         forms.forEach(function (form) {
-            var submitBtn = form.querySelector('button[type="submit"]');
-            var errorBox = form.querySelector('.formError');
-            var successBox = form.querySelector('.successMessage');
+          var submitBtn = form.querySelector('button[type="submit"]');
+          var errorBox = form.querySelector(".formError");
+          var successBox = form.querySelector(".successMessage");
 
-            function setError(message) {
-                if (!errorBox) return;
-                if (!message) {
-                    errorBox.textContent = "";
-                    errorBox.classList.add("hidden");
-                    return;
-                }
-                errorBox.textContent = message;
-                errorBox.classList.remove("hidden");
+          function setError(message) {
+            if (!errorBox) return;
+            if (!message) {
+              errorBox.textContent = "";
+              errorBox.classList.add("hidden");
+              return;
+            }
+            errorBox.textContent = message;
+            errorBox.classList.remove("hidden");
+          }
+
+          form.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            if (!form.checkValidity()) {
+              form.reportValidity();
+              return;
             }
 
-            form.addEventListener("submit", async function (event) {
-                event.preventDefault();
+            setError("");
+            if (submitBtn) {
+              submitBtn.disabled = true;
+              submitBtn.textContent = "Envoi en cours...";
+            }
 
-                if (!form.checkValidity()) {
-                    form.reportValidity();
-                    return;
-                }
+            try {
+              var response = await fetch(form.action, {
+                method: form.method || "POST",
+                body: new FormData(form),
+              });
 
-                setError("");
-                if (submitBtn) {
-                    submitBtn.disabled = true;
-                    submitBtn.textContent = "Envoi en cours...";
-                }
+              if (!response.ok) throw new Error("Echec de l'envoi");
 
-                try {
-                    var response = await fetch(form.action, {
-                        method: form.method || "POST",
-                        body: new FormData(form),
-                    });
-
-                    if (!response.ok) throw new Error("Echec de l'envoi");
-
-                    form.classList.add("hidden");
-                    if (successBox) successBox.classList.remove("hidden");
-                } catch (error) {
-                    setError("Une erreur est survenue pendant l'envoi. Merci de reessayer.");
-                    if (submitBtn) {
-                        submitBtn.disabled = false;
-                        submitBtn.textContent = "Envoyer";
-                    }
-                }
-            });
+              form.classList.add("hidden");
+              if (successBox) successBox.classList.remove("hidden");
+            } catch (error) {
+              setError(
+                "Une erreur est survenue pendant l'envoi. Merci de reessayer.",
+              );
+              if (submitBtn) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Envoyer";
+              }
+            }
+          });
         });
-    })();
-</script>
-</body></html>
+      })();
+    </script>
+  </body>
+</html>

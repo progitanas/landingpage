@@ -60,6 +60,11 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+      async
+      defer
+    ></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script id="tailwind-config">
       tailwind.config = {
@@ -318,6 +323,13 @@
               novalidate
               action="https://leats.app.n8n.cloud/webhook/lead-capture"
             >
+              <input
+                type="hidden"
+                id="formStartedAtMs"
+                name="formStartedAtMs"
+                value=""
+              />
+              <input type="hidden" name="formSource" value="index.html" />
               <div class="mb-8">
                 <div class="flex justify-between items-end mb-4">
                   <h3 id="stepTitle" class="text-2xl font-bold text-primary">
@@ -570,6 +582,37 @@
                       confidentialité.</span
                     >
                   </label>
+
+                  <div class="hidden" aria-hidden="true">
+                    <label for="website">Site web (laisser vide)</label>
+                    <input
+                      id="website"
+                      name="website"
+                      type="text"
+                      autocomplete="off"
+                      tabindex="-1"
+                    />
+                  </div>
+
+                  <div
+                    id="captchaContainer"
+                    class="rounded-xl bg-surface-container-low p-4 ring-1 ring-outline-variant/40"
+                  >
+                    <p class="text-sm font-semibold text-primary mb-3">
+                      Verification anti-spam
+                    </p>
+                    <div
+                      class="cf-turnstile"
+                      data-sitekey="0x4AAAAAAC1B1uVvL-p2vcjy"
+                      data-theme="light"
+                      data-language="fr"
+                      data-response-field-name="cf-turnstile-response"
+                    ></div>
+                    <p class="mt-3 text-xs text-on-surface-variant">
+                      Ce controle protege ce formulaire contre les envois
+                      automatises.
+                    </p>
+                  </div>
                 </section>
 
                 <div
@@ -1153,6 +1196,11 @@
         const submitBtn = document.getElementById("submitBtn");
         const stepError = document.getElementById("stepError");
         const successMessage = document.getElementById("successMessage");
+        const formStartedAtField = document.getElementById("formStartedAtMs");
+        const formStartedAt = Date.now();
+        if (formStartedAtField) {
+          formStartedAtField.value = String(formStartedAt);
+        }
 
         const stepTitles = {
           1: "Votre profil",
@@ -1189,6 +1237,36 @@
           }
 
           setStepError("");
+          return true;
+        }
+
+        function validateAntiSpam(formData) {
+          const honeypotValue = String(formData.get("website") || "").trim();
+          if (honeypotValue) {
+            setStepError(
+              "Validation anti-spam detectee. Merci de recharger la page puis de reessayer.",
+            );
+            return false;
+          }
+
+          const elapsed = Date.now() - formStartedAt;
+          if (elapsed < 3000) {
+            setStepError(
+              "Merci de patienter quelques secondes avant l'envoi du formulaire.",
+            );
+            return false;
+          }
+
+          const turnstileToken = String(
+            formData.get("cf-turnstile-response") || "",
+          ).trim();
+          if (!turnstileToken) {
+            setStepError(
+              "Merci de valider le captcha anti-spam avant d'envoyer votre demande.",
+            );
+            return false;
+          }
+
           return true;
         }
 
@@ -1240,6 +1318,12 @@
 
           try {
             const formData = new FormData(form);
+            if (!validateAntiSpam(formData)) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = "Envoyer ma demande";
+              return;
+            }
+
             const response = await fetch(form.action, {
               method: form.method || "POST",
               body: formData,
