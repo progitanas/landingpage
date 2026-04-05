@@ -19,6 +19,14 @@
     {
       "source": "/senior/comp1/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/senior/comp2",
+      "destination": "/index1.html"
+    },
+    {
+      "source": "/senior/comp2/",
+      "destination": "/index1.html"
     }
   ]
 }

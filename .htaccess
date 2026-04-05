@@ -5,3 +5,4 @@ RewriteRule ^mutuelle-senior/comparatif/01/?$ /senior/comp1 [R=302,L,QSA]
 
 # Serve the main landing page while keeping clean landing URLs visible.
 RewriteRule ^senior/comp1/?$ /index.html [L]
+RewriteRule ^senior/comp2/?$ /index1.html [L]
