@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/mutuelle-senior/comparatif/01",
+      "destination": "/senior/comp1",
+      "permanent": false
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/01/",
+      "destination": "/senior/comp1",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/senior/comp1",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/senior/comp1/",
+      "destination": "/index.html"
+    }
+  ]
+}
