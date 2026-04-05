@@ -27,6 +27,78 @@
     {
       "source": "/senior/comp2/",
       "destination": "/index1.html"
+    },
+    {
+      "source": "/senior/comp3",
+      "destination": "/index2.html"
+    },
+    {
+      "source": "/senior/comp3/",
+      "destination": "/index2.html"
+    },
+    {
+      "source": "/senior/comp4",
+      "destination": "/index3.html"
+    },
+    {
+      "source": "/senior/comp4/",
+      "destination": "/index3.html"
+    },
+    {
+      "source": "/senior/comp5",
+      "destination": "/index4.html"
+    },
+    {
+      "source": "/senior/comp5/",
+      "destination": "/index4.html"
+    },
+    {
+      "source": "/senior/comp6",
+      "destination": "/index5.html"
+    },
+    {
+      "source": "/senior/comp6/",
+      "destination": "/index5.html"
+    },
+    {
+      "source": "/senior/comp7",
+      "destination": "/index6.html"
+    },
+    {
+      "source": "/senior/comp7/",
+      "destination": "/index6.html"
+    },
+    {
+      "source": "/senior/comp8",
+      "destination": "/index7.html"
+    },
+    {
+      "source": "/senior/comp8/",
+      "destination": "/index7.html"
+    },
+    {
+      "source": "/senior/comp9",
+      "destination": "/index8.html"
+    },
+    {
+      "source": "/senior/comp9/",
+      "destination": "/index8.html"
+    },
+    {
+      "source": "/senior/comp10",
+      "destination": "/index9.html"
+    },
+    {
+      "source": "/senior/comp10/",
+      "destination": "/index9.html"
+    },
+    {
+      "source": "/senior/comp11",
+      "destination": "/index10.html"
+    },
+    {
+      "source": "/senior/comp11/",
+      "destination": "/index10.html"
     }
   ]
 }
