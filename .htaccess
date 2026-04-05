@@ -1,8 +1,5 @@
 RewriteEngine On
 
-# Canonical URL for landing 1.
-RewriteRule ^mutuelle-senior/comparatif/01/?$ /senior/comp1 [R=302,L,QSA]
-
 # Serve the main landing page while keeping clean landing URLs visible.
 RewriteRule ^senior/comp1/?$ /index.html [L]
 RewriteRule ^senior/comp2/?$ /index1.html [L]
@@ -15,3 +12,16 @@ RewriteRule ^senior/comp8/?$ /index7.html [L]
 RewriteRule ^senior/comp9/?$ /index8.html [L]
 RewriteRule ^senior/comp10/?$ /index9.html [L]
 RewriteRule ^senior/comp11/?$ /index10.html [L]
+
+# Also support long URLs for email campaigns.
+RewriteRule ^mutuelle-senior/comparatif/01/?$ /index.html [L]
+RewriteRule ^mutuelle-senior/comparatif/02/?$ /index1.html [L]
+RewriteRule ^mutuelle-senior/comparatif/03/?$ /index2.html [L]
+RewriteRule ^mutuelle-senior/comparatif/04/?$ /index3.html [L]
+RewriteRule ^mutuelle-senior/comparatif/05/?$ /index4.html [L]
+RewriteRule ^mutuelle-senior/comparatif/06/?$ /index5.html [L]
+RewriteRule ^mutuelle-senior/comparatif/07/?$ /index6.html [L]
+RewriteRule ^mutuelle-senior/comparatif/08/?$ /index7.html [L]
+RewriteRule ^mutuelle-senior/comparatif/09/?$ /index8.html [L]
+RewriteRule ^mutuelle-senior/comparatif/10/?$ /index9.html [L]
+RewriteRule ^mutuelle-senior/comparatif/11/?$ /index10.html [L]

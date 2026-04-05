@@ -1,16 +1,4 @@
 {
-  "redirects": [
-    {
-      "source": "/mutuelle-senior/comparatif/01",
-      "destination": "/senior/comp1",
-      "permanent": false
-    },
-    {
-      "source": "/mutuelle-senior/comparatif/01/",
-      "destination": "/senior/comp1",
-      "permanent": false
-    }
-  ],
   "rewrites": [
     {
       "source": "/senior/comp1",
@@ -98,6 +86,94 @@
     },
     {
       "source": "/senior/comp11/",
+      "destination": "/index10.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/01",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/01/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/02",
+      "destination": "/index1.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/02/",
+      "destination": "/index1.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/03",
+      "destination": "/index2.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/03/",
+      "destination": "/index2.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/04",
+      "destination": "/index3.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/04/",
+      "destination": "/index3.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/05",
+      "destination": "/index4.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/05/",
+      "destination": "/index4.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/06",
+      "destination": "/index5.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/06/",
+      "destination": "/index5.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/07",
+      "destination": "/index6.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/07/",
+      "destination": "/index6.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/08",
+      "destination": "/index7.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/08/",
+      "destination": "/index7.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/09",
+      "destination": "/index8.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/09/",
+      "destination": "/index8.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/10",
+      "destination": "/index9.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/10/",
+      "destination": "/index9.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/11",
+      "destination": "/index10.html"
+    },
+    {
+      "source": "/mutuelle-senior/comparatif/11/",
       "destination": "/index10.html"
     }
   ]

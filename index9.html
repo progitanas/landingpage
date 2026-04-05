@@ -1,542 +1,457 @@
 
 <!DOCTYPE html>
 
-<html class="light" lang="fr"><head>
+<html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Serene Sentinel Health | Comparateur Mutuelle Senior</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<title>SeniorsCare | Premium Health Insurance Comparator</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
           extend: {
             "colors": {
-                "error-container": "#ffdad6",
-                "primary": "#134750",
-                "surface-container-high": "#e1eaec",
-                "surface-container-lowest": "#ffffff",
-                "surface-container-highest": "#dbe4e6",
-                "on-primary": "#ffffff",
-                "surface-variant": "#dbe4e6",
-                "on-primary-fixed": "#001f25",
-                "background": "#f2fbfd",
-                "inverse-primary": "#9ecfd9",
-                "secondary-fixed-dim": "#4ddbce",
-                "on-tertiary": "#ffffff",
-                "inverse-on-surface": "#e9f2f4",
-                "surface-dim": "#d2dcde",
-                "primary-container": "#2f5f68",
-                "secondary": "#006a63",
-                "error": "#ba1a1a",
-                "surface-container": "#e6eff2",
-                "on-tertiary-container": "#84e488",
-                "on-surface-variant": "#40484a",
-                "on-error": "#ffffff",
-                "on-surface": "#141d1f",
-                "tertiary-fixed": "#97f999",
-                "on-error-container": "#93000a",
-                "on-primary-container": "#a7d7e1",
-                "surface": "#f2fbfd",
-                "on-primary-fixed-variant": "#1b4d56",
-                "on-tertiary-fixed-variant": "#005319",
-                "outline-variant": "#c0c8ca",
-                "inverse-surface": "#293234",
-                "tertiary": "#004c16",
-                "on-tertiary-fixed": "#002106",
-                "surface-tint": "#36656e",
-                "on-background": "#141d1f",
-                "secondary-fixed": "#6ff8ea",
-                "tertiary-container": "#006721",
-                "primary-fixed": "#baebf5",
-                "surface-container-low": "#ecf5f7",
-                "primary-fixed-dim": "#9ecfd9",
-                "on-secondary-fixed-variant": "#00504a",
-                "on-secondary": "#ffffff",
-                "surface-bright": "#f2fbfd",
-                "on-secondary-fixed": "#00201d",
-                "secondary-container": "#6ff8ea",
-                "on-secondary-container": "#007169",
-                "outline": "#70787a",
-                "tertiary-fixed-dim": "#7bdb80"
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed": "#331200",
+                    "outline-variant": "#c2c6d4",
+                    "primary-fixed-dim": "#a9c7ff",
+                    "surface-container": "#eceef0",
+                    "error-container": "#ffdad6",
+                    "surface": "#f7f9fb",
+                    "surface-container-highest": "#e0e3e5",
+                    "secondary-fixed-dim": "#6fd7d6",
+                    "surface-container-high": "#e6e8ea",
+                    "tertiary": "#773400",
+                    "on-surface-variant": "#424752",
+                    "surface-dim": "#d8dadc",
+                    "secondary": "#006a6a",
+                    "on-error": "#ffffff",
+                    "on-tertiary-container": "#ffd0b7",
+                    "secondary-container": "#8cf3f3",
+                    "primary-container": "#005eb8",
+                    "on-tertiary-fixed-variant": "#763300",
+                    "secondary-fixed": "#8cf3f3",
+                    "on-error-container": "#93000a",
+                    "inverse-on-surface": "#eff1f3",
+                    "on-primary-container": "#c8daff",
+                    "error": "#ba1a1a",
+                    "surface-tint": "#005db6",
+                    "surface-container-low": "#f2f4f6",
+                    "on-surface": "#191c1e",
+                    "inverse-surface": "#2d3133",
+                    "on-background": "#191c1e",
+                    "on-secondary-fixed-variant": "#004f4f",
+                    "on-secondary-fixed": "#002020",
+                    "inverse-primary": "#a9c7ff",
+                    "on-primary": "#ffffff",
+                    "primary": "#00478d",
+                    "on-primary-fixed": "#001b3d",
+                    "on-primary-fixed-variant": "#00468c",
+                    "tertiary-fixed-dim": "#ffb68d",
+                    "tertiary-fixed": "#ffdbc9",
+                    "background": "#f7f9fb",
+                    "outline": "#727783",
+                    "tertiary-container": "#9c4600",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e0e3e5",
+                    "surface-bright": "#f7f9fb",
+                    "on-secondary-container": "#007070",
+                    "primary-fixed": "#d6e3ff",
+                    "surface-container-lowest": "#ffffff"
             },
             "borderRadius": {
-                "DEFAULT": "0.25rem",
-                "lg": "0.5rem",
-                "xl": "0.75rem",
-                "full": "9999px"
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
             },
             "fontFamily": {
-                "headline": ["Plus Jakarta Sans"],
-                "body": ["Inter"],
-                "label": ["Inter"]
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
             }
           },
-        },
+        }
       }
     </script>
 <style>
-        body { font-family: 'Inter', sans-serif; }
-        h1, h2, h3, .plus-jakarta { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .btn-primary-gradient {
-            background: linear-gradient(135deg, #134750 0%, #2f5f68 100%);
-        }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #00478d 0%, #005eb8 100%);
+      }
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
     </style>
 </head>
-<body class="bg-background text-on-surface antialiased">
+<body class="bg-surface font-body text-on-surface">
 <!-- TopNavBar -->
-<header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm dark:shadow-none fixed top-0 w-full z-50 no-border bg-gradient-to-b from-slate-50 to-transparent">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
-<div class="text-2xl font-bold tracking-tight text-teal-900 dark:text-teal-100 plus-jakarta">
-                Serene Sentinel Health
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm no-border bg-slate-50/50">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold text-blue-800 dark:text-blue-300 font-headline tracking-tight">
+                SeniorsCare
             </div>
-<nav class="hidden md:flex gap-8 items-center">
-<a class="text-slate-600 dark:text-slate-400 hover:text-teal-800 dark:hover:text-teal-200 transition-colors font-medium" href="#">Nos services</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-teal-800 dark:hover:text-teal-200 transition-colors font-medium" href="#">Avantages</a>
-<a class="text-slate-600 dark:text-slate-400 hover:text-teal-800 dark:hover:text-teal-200 transition-colors font-medium" href="#">Aide</a>
-<button class="bg-primary text-on-primary px-6 py-2.5 rounded-xl font-bold btn-primary-gradient hover:scale-105 transition-transform duration-150 shadow-md">
-                    Comparer maintenant
-                </button>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-blue-700 dark:text-blue-400 font-bold border-b-2 border-blue-600 font-manrope headline-sm" href="#">Our Plans</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-opacity duration-300 font-manrope headline-sm" href="#">Benefits</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-opacity duration-300 font-manrope headline-sm" href="#">How it Works</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-blue-600 transition-opacity duration-300 font-manrope headline-sm" href="#">Testimonials</a>
+</div>
+<div class="flex gap-4 items-center">
+<button class="hidden lg:block text-slate-600 font-semibold hover:text-primary transition-colors">Call an Expert</button>
+<button class="primary-gradient text-white px-6 py-2.5 rounded-md font-semibold hover:opacity-90 transition-all transform active:scale-95">Get a Quote</button>
+</div>
+</div>
 </nav>
-<button class="md:hidden text-primary">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
-</header>
-<main class="pt-20">
+<main class="pt-24">
 <!-- Hero Section -->
-<section class="relative overflow-hidden bg-surface py-16 md:py-24">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-<div class="lg:col-span-7 space-y-8">
-<h1 class="text-5xl md:text-6xl font-extrabold text-primary leading-tight plus-jakarta">
-                        Comparez les mutuelles senior et économisez <span class="text-secondary">jusqu’à 30%</span>
+<section class="relative overflow-hidden px-8 py-20 lg:py-32 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="z-10">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold uppercase tracking-wider mb-6">
+<span class="material-symbols-outlined text-sm">verified</span>
+                        France's Top Rated Comparator
+                    </span>
+<h1 class="font-headline text-5xl lg:text-7xl font-extrabold text-on-surface leading-[1.1] mb-6 tracking-tight">
+                        Find your perfect health cover in <span class="text-primary">2 minutes</span>
 </h1>
-<p class="text-xl text-on-surface-variant max-w-xl leading-relaxed">
-                        Trouvez la meilleure couverture santé en moins de 2 minutes. Gratuit et sans engagement. Une protection sur mesure pour votre sérénité.
+<p class="text-on-surface-variant text-lg lg:text-xl leading-relaxed mb-10 max-w-xl">
+                        A sanctuary for your health. Compare tailored mutual insurance plans specifically designed for active seniors. No hidden fees, just pure clarity.
                     </p>
-<div class="flex items-center gap-4">
-<div class="flex -space-x-2">
-<img class="w-10 h-10 rounded-full border-2 border-white" data-alt="portrait of a smiling senior woman with grey hair and glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLtEJsZUKdHmxi73ltGJUpJfuofSyWK8ZD0IZ6uEa7eI0iwIkC7TuI9k4m1yci6VjbUVk-6O0VGuccxwqlutXanem-VyEKZqhFAwF50AJqwmBU79iYaNSL8yszcGl2a2VUoYtqbi04wzU6YDa92DN3mxcM0urwB5XsXoybgspglIgYgGlaAAPakdQhwj3BSKwylIs3MC0B9P_afyjDUkOMaamLMIzxX0bRgvMoW_sdOcTfgmLh1m8aFVPKIlipXOKoxfKGuShiLwI"/>
-<img class="w-10 h-10 rounded-full border-2 border-white" data-alt="portrait of a cheerful senior man with a beard and outdoor lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6VB2tT1l6Sy20L6atHBAoNA-jUdE-Vl7x-gGV_qsuJMZPItrkGAIXHD0xUtoK3omRPXmz2uUbZD0GziZb-Wacb1ZPKzTNO4GCWZcwB5F5srsgb_fS4HK_Ht64Qj6UsVLbwgWlyYdr_dB30BAkqKunQOzqVy911Mekjk4gwjuf_HVFqblEW-h8B-DoT3mmX-kP7yhhpK8audacMzW4l5-322ky1TfnTanTWUhhmp_lCotduGxXjNPeGnyrjgsrAPjftgtQk8wO-Ro"/>
-<img class="w-10 h-10 rounded-full border-2 border-white" data-alt="profile photo of a kind elderly woman smiling in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs2MzjtWfphdz5EhsKMfzYlPS1WVg-j6XIWTVznju9CJtugRLTkCP_59r77ZdbGyKsWmuX0YXImlZ40DuoItvug-eqBLCHJyGAi-4cqDLIr35tqhHnQwvEk4C4XQsYtt1fmiCIOADUBHbErOiwPToYAVBBaAvjkCsiDmgIl5fgrnip4C2EEQ-ER4H3JOku9JnBw8EB8cWAYVb-U3p8UJ0hBYlZ9EyRcBWnm350gq2u1y2RkoTiSBVtJkP6MmfXZiCluQ_9BHzjH8o"/>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="primary-gradient text-white px-10 py-4 rounded-md text-lg font-bold shadow-xl hover:shadow-primary/20 transition-all flex items-center justify-center gap-2 group">
+                            Start My Comparison
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="bg-surface-container-low text-on-surface px-10 py-4 rounded-md text-lg font-semibold hover:bg-surface-container-high transition-all">
+                            View Top Plans
+                        </button>
 </div>
-<div>
-<div class="flex items-center gap-1 text-yellow-500">
+<div class="mt-12 flex items-center gap-6">
+<div class="flex -space-x-3">
+<img class="w-12 h-12 rounded-full border-4 border-surface object-cover" data-alt="portrait of smiling senior woman with grey hair in soft natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgRYSvYMAWS7jZHMuWn0KfSbbSZdJjVg9A8fUjMJZpCrfP_0Fke35Sh-JTgieJW7z0m7nGFFNjeTf_MH8sgxpS1VY7doj7rcqODJOf1mZ7zk63ikdemxl0M-rS1D81DY5eiWT1ZXZDHw0gz7D9OOJ8Jr5JcI6coYyAg0qv0ofBVCpw6ejWNVDY-PJkxmEXf48JbjJuPYpZTabFuJaveHpG-TtZCf9WIA0ySf-fzwBZQS_9D7sCQ10ZGFr8xKHuedXlQytwqWQOmGg"/>
+<img class="w-12 h-12 rounded-full border-4 border-surface object-cover" data-alt="close-up of elderly man smiling warmly at camera outdoors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVxwd6PgOieN3sr_Yupcx-MY59jxwHe9cqlq00mgt-l4jGEKk8Dbfx7np9VB7SookJbOhdFSHEzKIUMWqm9Y6e9R2U10E7aibfy4NNBmGb5YZDGyivBpt-LulKsR0UQb2ci3dO2ah9iP8UZ1dPiBJGOZgC82M9dSnt6sJUV_ocJ7iIYpraZ7BCFGMp9zzXjfq6QqKPqkxo9sKneSDAX1mbbwTVdx4BibarDxDxKHZG39beyZikQ59SvG_wAOZVAQt7l9tuJjz8pe4"/>
+<img class="w-12 h-12 rounded-full border-4 border-surface object-cover" data-alt="happy senior man looking sideways laughing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw4HBrABbW3X8oa7YqaF6OYwa8b17CZzKkSECaGFqj9SI0QowC2QAecj8k37rpGKA4fUmsRkAwfWRXBwsHAE8-19pMmVGxuC2VCOhQBfQvUXhsTRxf9RrSW1oCnUCBQaN9u9F4GMS1j6XeVwwXPQHtrHNbg15eM6pVeGfk1AEyNG1A42SH8jmvfKOLk0xyiT9Z8Q9An5cyMWJlOZY0ynOBYbSPa58z_bY9lkZJfqWhnGu8oC905Q1dMWp41frR97fdrcmIHwO5K-I"/>
+</div>
+<p class="text-sm font-medium text-on-surface-variant">
+                            Joined by <span class="text-on-surface font-bold">12,400+</span> seniors this month
+                        </p>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="relative rounded-xl overflow-hidden shadow-2xl transform rotate-1">
+<img class="w-full h-full object-cover" data-alt="active senior couple walking in a sunlit park holding hands and laughing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgwXq3Aoht4VepQNBKKiXvGjyOZccJ5swRJLsId9ZPOq9oFBMpJllLVT87kAFWe46rdmyUJc4u-sO-AkibDTwniXBsYwVSx3Rlhmt__hSTeN2Rlvjsi-zVK_dusxeAu30PXjbbiyzi5G9At2xyrecAWSdylimi0XxTYgie7xPSFg_S7BrBNm_X_ReEaqnYvrUTyR1JOj7Q8t87lL24FgpIPgX-f06CPKOch9PcUWIVG9fppJxT1uzTPeOtlhe6D5affnk4fBF2M90"/>
+<div class="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur p-6 rounded-xl shadow-lg">
+<div class="flex justify-between items-center mb-4">
+<span class="font-headline font-bold text-primary">Live Satisfaction</span>
+<span class="bg-secondary-container text-on-secondary-container px-2 py-1 rounded text-xs font-bold">98% Positive</span>
+</div>
+<div class="flex gap-1 text-tertiary">
 <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="font-bold text-on-surface">4.8/5</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
 </div>
-<p class="text-sm text-on-surface-variant">2,500+ avis clients satisfaits</p>
-</div>
-</div>
-</div>
-<div class="lg:col-span-5">
-<div class="bg-surface-container-lowest p-8 rounded-3xl shadow-xl shadow-primary/5 border border-surface-container-high">
-<h2 class="text-2xl font-bold text-primary mb-6 plus-jakarta">Trouver mon tarif</h2>
-<form class="space-y-6">
-<div class="grid grid-cols-2 gap-4">
-<div class="space-y-2">
-<label class="text-sm font-semibold text-on-surface-variant">Votre âge</label>
-<input class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary text-lg" placeholder="ex: 62" type="number"/>
-</div>
-<div class="space-y-2">
-<label class="text-sm font-semibold text-on-surface-variant">Situation</label>
-<select class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary text-lg">
-<option>Seul</option>
-<option>Couple</option>
-</select>
-</div>
-</div>
-<div class="space-y-2">
-<label class="text-sm font-semibold text-on-surface-variant">Besoin Hospitalisation</label>
-<select class="w-full bg-surface-container-low border-none rounded-xl p-4 focus:ring-2 focus:ring-primary text-lg">
-<option>Essentiel (100%)</option>
-<option>Renforcé (200%)</option>
-<option>Maximum (400%)</option>
-</select>
-</div>
-<div class="space-y-2">
-<label class="text-sm font-semibold text-on-surface-variant">Budget mensuel cible</label>
-<input class="w-full accent-primary h-2 bg-surface-container-high rounded-full appearance-none cursor-pointer" max="300" min="30" step="10" type="range"/>
-<div class="flex justify-between text-xs font-medium text-on-surface-variant">
-<span>30€</span>
-<span>300€+</span>
-</div>
-</div>
-<button class="w-full btn-primary-gradient text-on-primary py-5 rounded-xl font-extrabold text-xl shadow-lg hover:shadow-primary/20 transition-all" type="submit">
-                                Comparer les offres
-                            </button>
-<p class="text-center text-xs text-on-surface-variant flex items-center justify-center gap-2">
-<span class="material-symbols-outlined text-secondary text-sm" style="font-variation-settings: 'FILL' 1;">verified_user</span>
-                                Données 100% sécurisées &amp; anonymes
-                            </p>
-</form>
-</div>
-</div>
-</div>
-</section>
-<!-- Reassurance Bar -->
-<section class="bg-surface-container-low py-8">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-8">
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-secondary shadow-sm">
-<span class="material-symbols-outlined">payments</span>
-</div>
-<span class="font-bold text-primary">100% Gratuit</span>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-secondary shadow-sm">
-<span class="material-symbols-outlined">timer</span>
-</div>
-<span class="font-bold text-primary">Rapide (2 min)</span>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-secondary shadow-sm">
-<span class="material-symbols-outlined">verified</span>
-</div>
-<span class="font-bold text-primary">Sans engagement</span>
-</div>
-<div class="flex items-center gap-4">
-<div class="w-12 h-12 rounded-full bg-white flex items-center justify-center text-secondary shadow-sm">
-<span class="material-symbols-outlined">rebase_edit</span>
-</div>
-<span class="font-bold text-primary">Toutes les offres</span>
-</div>
-</div>
-</section>
-<!-- How it Works -->
-<section class="py-24 bg-surface-container-lowest">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-16 space-y-4">
-<h2 class="text-4xl font-extrabold text-primary plus-jakarta">Comment ça marche ?</h2>
-<p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Trois étapes simples pour une meilleure protection santé adaptée à votre retraite.</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative">
-<!-- Steps Connectors (Desktop only) -->
-<div class="hidden md:block absolute top-16 left-1/4 right-1/4 h-0.5 border-t-2 border-dashed border-surface-container-high -z-10"></div>
-<div class="text-center space-y-6 group">
-<div class="w-20 h-20 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto text-3xl font-bold group-hover:scale-110 transition-transform">1</div>
-<div class="space-y-2">
-<h3 class="text-xl font-bold text-primary plus-jakarta">Remplissez le formulaire</h3>
-<p class="text-on-surface-variant">Précisez vos besoins en quelques clics pour un profil personnalisé.</p>
-</div>
-</div>
-<div class="text-center space-y-6 group">
-<div class="w-20 h-20 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto text-3xl font-bold group-hover:scale-110 transition-transform">2</div>
-<div class="space-y-2">
-<h3 class="text-xl font-bold text-primary plus-jakarta">Comparez les offres</h3>
-<p class="text-on-surface-variant">Notre algorithme scanne le marché pour trouver les meilleurs rapports garanties/prix.</p>
-</div>
-</div>
-<div class="text-center space-y-6 group">
-<div class="w-20 h-20 bg-primary-container text-on-primary-container rounded-full flex items-center justify-center mx-auto text-3xl font-bold group-hover:scale-110 transition-transform">3</div>
-<div class="space-y-2">
-<h3 class="text-xl font-bold text-primary plus-jakarta">Choisissez le meilleur</h3>
-<p class="text-on-surface-variant">Sélectionnez l'offre idéale et souscrivez en toute sérénité sans paperasse.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Benefits Section - Asymmetric Bento Grid -->
-<section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
-<div class="md:col-span-8 bg-primary text-on-primary p-12 rounded-3xl relative overflow-hidden flex flex-col justify-end min-h-[400px]">
-<img class="absolute inset-0 w-full h-full object-cover opacity-30 mix-blend-overlay" data-alt="close up of an elderly couple laughing together in a bright outdoor setting, representing healthy living" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChT9sWqAZrwK8mOd8mpbdiryhqlPsEwo9gPGuSXku7S--4Jsu5jEguE-GuOCQ3_LovctJT1Fq85iwefz78OQM4ft5JnazEdbJFyZ0zOLdpjqfAiHhYNoZRmoj5oKohAboITISJzE9vK82qxzSef8WmnH3xqfiulOaT-VehDq317WespONvw9cu4efZQVb0ykLKQbyvRf4PTraWOKlxqQWEzi4wF641bzhtD5lXHolGBqG6Eid1AVZ1xs1H9BZYEXUAjQLawr5sxlE"/>
-<div class="relative z-10 space-y-4">
-<h3 class="text-3xl font-bold plus-jakarta">Offres sur mesure pour seniors</h3>
-<p class="text-on-primary-container text-lg max-w-md">Nous comprenons que vos besoins évoluent. Nos partenaires proposent des garanties spécifiques : audition, optique et cures thermales.</p>
+<!-- Trust Badges -->
+<section class="bg-surface-container-low py-12">
+<div class="max-w-7xl mx-auto px-8 flex flex-wrap justify-center md:justify-between items-center gap-10 opacity-70 grayscale hover:grayscale-0 transition-all">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+<span class="font-headline font-bold">Verified Experts</span>
 </div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl">security</span>
+<span class="font-headline font-bold">100% Data Protection</span>
 </div>
-<div class="md:col-span-4 bg-secondary-container text-on-secondary-container p-8 rounded-3xl flex flex-col justify-between">
-<span class="material-symbols-outlined text-5xl">savings</span>
-<div class="space-y-2">
-<h3 class="text-2xl font-bold plus-jakarta">Économisez gros</h3>
-<p>En moyenne, nos utilisateurs économisent 420€ par an sur leurs cotisations.</p>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl">handshake</span>
+<span class="font-headline font-bold">Licensed Partners</span>
 </div>
-</div>
-<div class="md:col-span-4 bg-surface-container-high p-8 rounded-3xl flex flex-col justify-between border border-outline-variant/30">
-<span class="material-symbols-outlined text-primary text-5xl">description</span>
-<div class="space-y-2">
-<h3 class="text-2xl font-bold text-primary plus-jakarta">Zéro paperasse</h3>
-<p class="text-on-surface-variant">On s'occupe de la résiliation de votre ancienne mutuelle pour vous. Totalement gratuit.</p>
-</div>
-</div>
-<div class="md:col-span-8 bg-tertiary-fixed text-on-tertiary-fixed p-12 rounded-3xl flex items-center gap-8">
-<div class="space-y-4 flex-1">
-<h3 class="text-3xl font-bold plus-jakarta">Hospitalisation Premium</h3>
-<p class="text-on-tertiary-fixed-variant text-lg">Prise en charge à 400% pour vos séjours, incluant la chambre particulière et le lit accompagnant.</p>
-</div>
-<div class="hidden lg:block w-32 h-32 bg-on-tertiary/20 rounded-full flex items-center justify-center">
-<span class="material-symbols-outlined text-6xl">home_health</span>
-</div>
-</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+<span class="font-headline font-bold">24/7 Assistance</span>
 </div>
 </div>
 </section>
-<!-- Sample Offers Preview -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-16 space-y-4">
-<h2 class="text-4xl font-extrabold text-primary plus-jakarta">Aperçu des meilleures offres du moment</h2>
-<p class="text-on-surface-variant text-lg">Exemples basés sur un profil senior de 62 ans.</p>
+<!-- Bento Grid Benefits -->
+<section class="px-8 py-24 max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline text-4xl font-extrabold mb-4">Why choose SeniorsCare?</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">We've removed the clutter to provide a sanctuary for your health insurance decisions.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl shadow-sm hover:shadow-md transition-shadow">
+<div class="bg-primary-container/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl">speed</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Real-time Comparison</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6">Our proprietary algorithm analyzes over 400+ insurance formulas in seconds, finding the exact match for your medical profile and budget.</p>
+<img class="w-full h-48 object-cover rounded-lg" data-alt="clean digital dashboard showing colorful health data charts and professional interface design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo6PRv9UPfLK6zE4qknyaBTaP4alUC-4TI5iBosFWnAhatyq6Icurc5dHWygWXP5XZMwZMTlLLjDi_MRX9PFFH0G7O2cUL7UjwT0NFGd1A7VOLZZB17lY_1MpHoQGa6LZ7c-AqOMZdXrE6zQYEnHCGOUsiCRrZ7z3ZNBjRPHCx8gBttvkTsktNkofQTtS4xVCVJlNjInMRwpLnq9_wfKOWd2tZS32_2YI-SBurudLH21n1XURMDXpguivsR23vbuG1ljY01fmSPUE"/>
+</div>
+<div class="bg-primary-gradient p-10 rounded-xl text-white flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-5xl mb-6">workspace_premium</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Exclusive Premium Rates</h3>
+<p class="opacity-90 leading-relaxed">Access negotiated contracts that aren't available on the public market. Save an average of €450 annually.</p>
+</div>
+<div class="mt-8 text-3xl font-bold font-headline">Save up to 35%</div>
+</div>
+<div class="bg-secondary-container/20 p-10 rounded-xl">
+<span class="material-symbols-outlined text-secondary text-4xl mb-4">person_search</span>
+<h3 class="font-headline text-xl font-bold mb-2">Personalized Advice</h3>
+<p class="text-on-surface-variant text-sm">Talk to a human expert who understands your specific senior healthcare needs.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">description</span>
+<h3 class="font-headline text-xl font-bold mb-2">Zero Paperwork</h3>
+<p class="text-on-surface-variant text-sm">We handle the cancellation of your current contract and the setup of the new one.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-4">health_and_safety</span>
+<h3 class="font-headline text-xl font-bold mb-2">Hospitalization Focus</h3>
+<p class="text-on-surface-variant text-sm">Specialized coverage for what matters most as you age, with zero wait times.</p>
+</div>
+</div>
+</section>
+<!-- Comparison Table Section -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline text-4xl font-extrabold mb-4">Compare Popular Formulas</h2>
+<p class="text-on-surface-variant">Three tiers of protection designed for every lifestyle.</p>
+</div>
+<div class="flex gap-2 p-1 bg-surface-container-high rounded-lg">
+<button class="px-6 py-2 bg-white rounded-md shadow-sm font-bold text-sm">Monthly</button>
+<button class="px-6 py-2 text-on-surface-variant font-bold text-sm">Annually</button>
+</div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-<!-- Offer Card 1 -->
-<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col border border-surface-container-high transition-transform hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<div class="bg-slate-100 p-2 rounded-lg font-bold text-primary">ASSUR' PLUS</div>
-<div class="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-xs font-bold">TOP ÉCO</div>
+<!-- Basic Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="p-8 pb-0">
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Essential</h3>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-4xl font-extrabold">€34</span>
+<span class="text-on-surface-variant">/month</span>
 </div>
-<div class="mb-6">
-<div class="text-4xl font-extrabold text-tertiary">42€<span class="text-lg font-normal text-on-surface-variant">/mois</span></div>
 </div>
-<ul class="space-y-4 mb-8 flex-1">
-<li class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                                100% Hospitalisation
-                            </li>
-<li class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                                200€ Optique (tous les 2 ans)
-                            </li>
-<li class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                                Tiers-payant intégral
-                            </li>
-</ul>
-<button class="w-full py-4 rounded-xl font-bold border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors">Voir les détails</button>
+<div class="p-8 space-y-4 flex-grow">
+<div class="flex justify-between items-center py-3">
+<span class="text-sm font-medium">Hospitalization</span>
+<span class="bg-secondary-container text-on-secondary-container text-xs px-2 py-1 rounded-full font-bold">100% Covered</span>
 </div>
-<!-- Offer Card 2 - Featured -->
-<div class="bg-white rounded-3xl p-8 shadow-2xl shadow-primary/10 flex flex-col border-2 border-secondary relative transform scale-105 z-10">
-<div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-secondary text-on-primary px-6 py-1 rounded-full text-sm font-extrabold uppercase tracking-wider">Recommandé</div>
-<div class="flex justify-between items-start mb-6 pt-4">
-<div class="bg-slate-100 p-2 rounded-lg font-bold text-primary">SERENIA SANTE</div>
-<div class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold">EQUILIBRE</div>
+<div class="flex justify-between items-center py-3 bg-surface-container-low px-3 -mx-3 rounded-lg">
+<span class="text-sm font-medium">Dental Care</span>
+<span class="text-sm font-bold">Basic Care Only</span>
 </div>
-<div class="mb-6">
-<div class="text-4xl font-extrabold text-tertiary">68€<span class="text-lg font-normal text-on-surface-variant">/mois</span></div>
+<div class="flex justify-between items-center py-3">
+<span class="text-sm font-medium">Optical/Hearing</span>
+<span class="text-sm font-bold">Limited</span>
 </div>
-<ul class="space-y-4 mb-8 flex-1">
-<li class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                                250% Hospitalisation
-                            </li>
-<li class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                                400€ Prothèses dentaires
-                            </li>
-<li class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                                Forfait médecines douces (150€)
-                            </li>
-</ul>
-<button class="w-full py-4 rounded-xl font-bold btn-primary-gradient text-white shadow-lg">Choisir cette offre</button>
+<div class="flex justify-between items-center py-3 bg-surface-container-low px-3 -mx-3 rounded-lg">
+<span class="text-sm font-medium">Alternative Medicine</span>
+<span class="material-symbols-outlined text-error">close</span>
 </div>
-<!-- Offer Card 3 -->
-<div class="bg-surface-container-lowest rounded-3xl p-8 shadow-sm flex flex-col border border-surface-container-high transition-transform hover:-translate-y-2">
-<div class="flex justify-between items-start mb-6">
-<div class="bg-slate-100 p-2 rounded-lg font-bold text-primary">PRESTIGE CARE</div>
-<div class="bg-tertiary/10 text-tertiary px-3 py-1 rounded-full text-xs font-bold">CONFORT +</div>
 </div>
-<div class="mb-6">
-<div class="text-4xl font-extrabold text-tertiary">95€<span class="text-lg font-normal text-on-surface-variant">/mois</span></div>
+<div class="p-8">
+<button class="w-full py-4 border-2 border-primary-container text-primary-container font-bold rounded-md hover:bg-primary-container hover:text-white transition-all">Select Essential</button>
 </div>
-<ul class="space-y-4 mb-8 flex-1">
-<li class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                                400% Hospitalisation
-                            </li>
-<li class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                                Chambre particulière incluse
-                            </li>
-<li class="flex items-center gap-3 text-on-surface-variant">
-<span class="material-symbols-outlined text-secondary text-xl">check_circle</span>
-                                Aide à domicile post-op
-                            </li>
-</ul>
-<button class="w-full py-4 rounded-xl font-bold border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors">Voir les détails</button>
+</div>
+<!-- Recommended Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-xl ring-2 ring-primary relative flex flex-col scale-105 z-10">
+<div class="absolute top-0 right-0 p-3">
+<span class="bg-secondary-fixed text-on-secondary-fixed text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Best Value</span>
+</div>
+<div class="p-8 pb-0">
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Serenity</h3>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-4xl font-extrabold text-primary">€58</span>
+<span class="text-on-surface-variant">/month</span>
+</div>
+</div>
+<div class="p-8 space-y-4 flex-grow">
+<div class="flex justify-between items-center py-3">
+<span class="text-sm font-medium">Hospitalization</span>
+<span class="bg-secondary-container text-on-secondary-container text-xs px-2 py-1 rounded-full font-bold">300% Covered</span>
+</div>
+<div class="flex justify-between items-center py-3 bg-surface-container-low px-3 -mx-3 rounded-lg">
+<span class="text-sm font-medium">Dental Care</span>
+<span class="bg-secondary-container text-on-secondary-container text-xs px-2 py-1 rounded-full font-bold">Implants Included</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="text-sm font-medium">Optical/Hearing</span>
+<span class="text-sm font-bold">€300/year</span>
+</div>
+<div class="flex justify-between items-center py-3 bg-surface-container-low px-3 -mx-3 rounded-lg">
+<span class="text-sm font-medium">Alternative Medicine</span>
+<span class="text-sm font-bold">3 sessions/year</span>
+</div>
+</div>
+<div class="p-8">
+<button class="w-full py-4 primary-gradient text-white font-bold rounded-md shadow-lg shadow-primary/20 transition-all transform active:scale-95">Select Serenity</button>
+</div>
+</div>
+<!-- Luxury Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="p-8 pb-0">
+<h3 class="font-headline text-2xl font-bold text-primary mb-2">Prestige</h3>
+<div class="flex items-baseline gap-1 mb-6">
+<span class="text-4xl font-extrabold">€89</span>
+<span class="text-on-surface-variant">/month</span>
+</div>
+</div>
+<div class="p-8 space-y-4 flex-grow">
+<div class="flex justify-between items-center py-3">
+<span class="text-sm font-medium">Hospitalization</span>
+<span class="bg-secondary-container text-on-secondary-container text-xs px-2 py-1 rounded-full font-bold">Unlimited Private Room</span>
+</div>
+<div class="flex justify-between items-center py-3 bg-surface-container-low px-3 -mx-3 rounded-lg">
+<span class="text-sm font-medium">Dental Care</span>
+<span class="bg-secondary-container text-on-secondary-container text-xs px-2 py-1 rounded-full font-bold">Full Reimbursement</span>
+</div>
+<div class="flex justify-between items-center py-3">
+<span class="text-sm font-medium">Optical/Hearing</span>
+<span class="text-sm font-bold">€700/year</span>
+</div>
+<div class="flex justify-between items-center py-3 bg-surface-container-low px-3 -mx-3 rounded-lg">
+<span class="text-sm font-medium">Alternative Medicine</span>
+<span class="text-sm font-bold">10 sessions/year</span>
+</div>
+</div>
+<div class="p-8">
+<button class="w-full py-4 border-2 border-primary-container text-primary-container font-bold rounded-md hover:bg-primary-container hover:text-white transition-all">Select Prestige</button>
+</div>
 </div>
 </div>
 </div>
 </section>
 <!-- Testimonials -->
-<section class="py-24 bg-surface-container-lowest">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
-<div class="space-y-6">
-<div class="flex items-center gap-4">
-<img class="w-16 h-16 rounded-full object-cover border-4 border-surface" data-alt="portrait of a satisfied senior man with glasses and a warm smile" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9rd6OORWTTEGjJ5iduoX1V2PJmX8DE83CxAb5jO1mD350EUBnWCn6gSHPWHHSDGtE_tXAULyZwKsUSESXWeCGI7LfGeosRa4fvaUjd265NWJBve1dTZ4W8x45ldTx_Ml5uosBr-91n3eEZwxW4VZI9s26P36504EnIIGjJH1V4cyVg1GR8D12I1Q4m81mfLQjZOJ2GZy5l-A_hlkfhZC-fkEXIA1IifLUKu5lbIvBXt6K6tzDC7PlR_ZDrIvFm-Eq9bL5nELT55w"/>
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
 <div>
-<h4 class="font-bold text-primary">Jean-Pierre, 67 ans</h4>
-<div class="flex text-yellow-500 text-sm">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-</div>
-</div>
-</div>
-<p class="text-lg italic text-primary-container font-medium leading-relaxed">
-                            "J'étais sceptique au début, mais le comparateur m'a permis de trouver une mutuelle qui rembourse bien mieux mes appareils auditifs pour 20€ de moins par mois."
-                        </p>
-</div>
-<div class="space-y-6">
+<h2 class="font-headline text-4xl font-extrabold mb-8 tracking-tight">Stories from our Sanctuary</h2>
+<div class="space-y-8">
+<div class="bg-surface-container-low p-8 rounded-xl relative">
+<span class="material-symbols-outlined text-6xl text-primary/10 absolute -top-4 -left-4">format_quote</span>
+<p class="italic text-lg mb-6 relative z-10">"I was lost in the terminology of traditional insurance. SeniorsCare made it so simple to understand. I found a plan that covers my specific specialist needs for €40 less than my old one."</p>
 <div class="flex items-center gap-4">
-<img class="w-16 h-16 rounded-full object-cover border-4 border-surface" data-alt="portrait of a confident senior woman with short white hair smiling at the camera" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD24jEEQnXmfN_5iiYAOChCs8P8EEIrUCdUFIxhinldFneT6eGp2Ga7GO56qEPm2zNYbd-kKBUKfxVnc5CPWLA_H3R5ijrIvQrzjKWWg4XHnHgA6R_ZhZzvC3dnrQC0AIRp-fbljUqaHNh6-zHGM-EcOloSur0THa0eVNbLi9mhzIeIIoRVbqQPr75CvnXMvIulTcplm-SO5KLyTSbrbHWxKRto3hxMuR_R5dIs7by9goPSYLjD2GmJTaeQzllKG1d4p6IIe8ghig4"/>
+<img class="w-12 h-12 rounded-full object-cover" data-alt="professional portrait of a senior man in a light blue shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoipEFg0gPdaLiVvBY5KDNvUs4ehVWzLWNQae4DDxK4mTZ5s3Ck4x8rZlpjmPhul6ewtZxI3dpCX1ccXnDE2SqIGbaoVMUON85wGdlC8xT5A9gcIkMt9NJ8bg-xybE2v16zsZevhhrCT3MV7L-DDobKcSMK-1igkXpliR5HMK_eS710QNXKgmagDFgb7uLZV_BUN07Mc_HaVmJrwuzOQeWNUwnHf-ogfQjaWlanHVovqXT0KG5F_aVQcjvRFT9MrKLxOrQxpFJzUw"/>
 <div>
-<h4 class="font-bold text-primary">Marie-Louise, 71 ans</h4>
-<div class="flex text-yellow-500 text-sm">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<h4 class="font-bold">Jean-Pierre L.</h4>
+<p class="text-sm text-on-surface-variant">Retired Engineer, Lyon</p>
 </div>
 </div>
 </div>
-<p class="text-lg italic text-primary-container font-medium leading-relaxed">
-                            "Service impeccable. La résiliation de mon ancienne assurance a été gérée entièrement par Serene Sentinel. Je n'ai eu qu'à signer mon nouveau contrat en ligne."
-                        </p>
-</div>
-<div class="space-y-6">
+<div class="bg-surface-container-low p-8 rounded-xl relative">
+<span class="material-symbols-outlined text-6xl text-primary/10 absolute -top-4 -left-4">format_quote</span>
+<p class="italic text-lg mb-6 relative z-10">"The personalized support is what makes the difference. I called them and spoke to Marie who walked me through every detail of the dental coverage. Very professional."</p>
 <div class="flex items-center gap-4">
-<img class="w-16 h-16 rounded-full object-cover border-4 border-surface" data-alt="portrait of an elderly man with grey hair looking thoughtful and calm in natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuRDcv8zV9JXlVKxM6MeF2sDCrH0UYSxil4_uZiGn49tHwHu9eR0jwfHi9AKfyHKJwHap6Mtgqf-jRPFsPSyUpJ3on5feJ7Gt5eLXNw2WnohD8GC9QdF6zJLr4E5PHgyYrt_Ro6QNW7wkmHX9guLaKwL_y_I4cxW70hDiZsWrmSK_9CnIB0mXOotg_6GAq5nkJI-ojgwgUvWAXaP2_eRE0kASu0UBXhtk5Mk16DdDAZtUNQtdYiMIspTfx2MULTVv18ZYYbfIWl2U"/>
+<img class="w-12 h-12 rounded-full object-cover" data-alt="smiling elegant senior woman wearing glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwdF750-ZALHD7euL7Coy1-eop2M2TRnbc6izuapqtxc0sDQOFTyrWsuuyJbsQV-TteO0V92CVkX4e5XKe-IE2UBSngaOX3qwgiKeijg-aEcj9gBaKWogHDXfAB6F2q5gDPydgmFefn2G9GLw1Hub12feDZy34-86B5hZ7XpokJbiSpu86jWAnJxWCD7X5lodAFGnziPID7q8ZdEXERSFzizRH0D1BXfv2nkGYd9VuoqMANt22N_cwXDQSlBJV-i7ljegkixpIPDo"/>
 <div>
-<h4 class="font-bold text-primary">Michel, 63 ans</h4>
-<div class="flex text-yellow-500 text-sm">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<h4 class="font-bold">Françoise D.</h4>
+<p class="text-sm text-on-surface-variant">Former Teacher, Bordeaux</p>
 </div>
 </div>
 </div>
-<p class="text-lg italic text-primary-container font-medium leading-relaxed">
-                            "Très facile à utiliser, même pour quelqu'un qui n'est pas un expert en informatique. Les propositions sont claires et sans frais cachés."
-                        </p>
 </div>
 </div>
+<div class="relative">
+<img class="rounded-2xl shadow-2xl w-full h-[600px] object-cover" data-alt="joyful senior group having a dinner party outdoors at twilight with warm lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA46xyf81Rl6xBe7Sab7qsLXb4Y8QKQc-lV86RN333X4x8DzCRQH_pIvfmZ83kleKUsOwpkycAHH-0sr79IldCI2OsRMii-QwWE4leGOq66oOoPF8rbWDYapI50kawxfTJ2j6XnRLCXeCUscsggwZwDdrWoBhU12yZldGdK5hHYZX85KtWIaITmtbuDECuZDAmZL-Y5sQuqLDXxqp9qxowA6eBcnFSCMDzhWmt5R6Hu7_kfzHi4nTA_3WmSE1XgJBpFovkq8FF3OcA"/>
+<div class="absolute -bottom-10 -right-10 bg-white p-8 rounded-2xl shadow-2xl hidden xl:block max-w-xs">
+<h4 class="font-headline font-bold text-xl mb-2">9.8/10 Satisfaction</h4>
+<p class="text-sm text-on-surface-variant mb-4">Based on 3,400 reviews from verified policyholders.</p>
+<div class="flex items-center gap-2 text-secondary font-bold">
+                            Read all reviews <span class="material-symbols-outlined">arrow_right_alt</span>
 </div>
-</section>
-<!-- FAQ Section -->
-<section class="py-24 bg-surface-container-low">
-<div class="max-w-4xl mx-auto px-8 space-y-8">
-<h2 class="text-3xl font-extrabold text-primary text-center plus-jakarta">Questions fréquentes</h2>
-<div class="space-y-4">
-<details class="group bg-surface-container-lowest rounded-2xl border border-surface-container-high overflow-hidden" open="">
-<summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-primary list-none">
-                            Qu'est-ce qu'une mutuelle senior ?
-                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-on-surface-variant leading-relaxed">
-                            Une mutuelle senior est un contrat de complémentaire santé spécifiquement conçu pour les personnes de plus de 55 ans. Elle met l'accent sur les remboursements liés à l'âge : optique, audition, dentaire, hospitalisation et prévention, tout en supprimant les garanties inutiles comme la maternité.
-                        </div>
-</details>
-<details class="group bg-surface-container-lowest rounded-2xl border border-surface-container-high overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-primary list-none">
-                            Pourquoi utiliser un comparateur ?
-                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-on-surface-variant leading-relaxed">
-                            Le marché de l'assurance est vaste et opaque. Un comparateur vous permet d'avoir une vision globale des offres en quelques secondes, de comparer les garanties à prix égal et de bénéficier de tarifs négociés que vous ne trouveriez pas en direct.
-                        </div>
-</details>
-<details class="group bg-surface-container-lowest rounded-2xl border border-surface-container-high overflow-hidden">
-<summary class="flex justify-between items-center p-6 cursor-pointer font-bold text-primary list-none">
-                            Y a-t-il des limites d'âge pour souscrire ?
-                            <span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
-</summary>
-<div class="px-6 pb-6 text-on-surface-variant leading-relaxed">
-                            La plupart de nos partenaires acceptent les souscriptions jusqu'à 85, voire 90 ans, sans questionnaire de santé préalable. Plus vous anticipez, plus vous sécurisez des garanties pérennes.
-                        </div>
-</details>
+</div>
 </div>
 </div>
 </section>
 <!-- Final CTA -->
-<section class="py-24 relative overflow-hidden">
-<div class="absolute inset-0 bg-primary-container -z-10"></div>
-<div class="max-w-5xl mx-auto px-8 text-center space-y-8 relative z-10">
-<h2 class="text-4xl md:text-5xl font-extrabold text-on-primary-container plus-jakarta leading-tight">Prêt à économiser sur votre santé ?</h2>
-<p class="text-xl text-on-primary-container/80 max-w-2xl mx-auto">Rejoignez les milliers de seniors qui font confiance à Serene Sentinel pour leur protection au quotidien.</p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
-<button class="px-12 py-6 bg-secondary text-on-primary rounded-2xl font-extrabold text-2xl shadow-xl hover:scale-105 transition-transform">
-                        Comparer les offres gratuitement
-                    </button>
-</div>
-<p class="text-on-primary-container/60 text-sm">Sans engagement • Gratuit • Réponse immédiate</p>
+<section class="bg-primary py-24 text-center px-8">
+<div class="max-w-4xl mx-auto">
+<h2 class="font-headline text-4xl lg:text-5xl font-extrabold text-white mb-8 tracking-tight">Pret a trouver votre serenite ?</h2>
+<p class="text-on-primary-container text-xl mb-12 opacity-90 leading-relaxed">Rejoignez des milliers de seniors qui ont deja simplifie leur sante. C'est gratuit, securise et en moins de 2 minutes.</p>
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-12 py-5 rounded-md text-xl font-bold hover:scale-105 transition-transform shadow-2xl">Obtenir mon devis personnalise</button>
 </div>
 </section>
 </main>
 <!-- Footer -->
-<footer class="bg-slate-100 dark:bg-slate-950 full-width py-12">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-8 px-8 max-w-7xl mx-auto">
-<div class="col-span-1 md:col-span-1 space-y-4">
-<div class="text-xl font-bold text-teal-900 dark:text-teal-100 plus-jakarta">Serene Sentinel</div>
-<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
-                    Le comparateur de référence pour les seniors en France. Autorité, clarté et économies garanties.
-                </p>
-<div class="flex gap-4">
-<a class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
-<span class="material-symbols-outlined text-sm">language</span>
-</a>
-<a class="w-8 h-8 rounded-full bg-slate-200 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
-<span class="material-symbols-outlined text-sm">thumb_up</span>
-</a>
+<footer class="bg-slate-100 dark:bg-slate-950 w-full py-12 tonal-shift-bg">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-xl font-bold text-blue-900 dark:text-blue-100 mb-4 font-inter">SeniorsCare</div>
+<p class="text-slate-500 max-w-sm font-inter body-md leading-relaxed">La plateforme de comparaison sante dediee exclusivement aux seniors en France.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8 font-inter body-md">
+<a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Politique de confidentialite</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Conditions d'utilisation</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Mentions assurance</a>
+<a class="text-slate-500 hover:text-blue-600 transition-colors" href="#">Contact</a>
 </div>
 </div>
-<div class="space-y-4">
-<h4 class="font-bold text-primary plus-jakarta">Navigation</h4>
-<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-<li><a class="hover:text-teal-700 dark:hover:text-teal-300" href="#">Notre processus</a></li>
-<li><a class="hover:text-teal-700 dark:hover:text-teal-300" href="#">Les avantages</a></li>
-<li><a class="hover:text-teal-700 dark:hover:text-teal-300" href="#">Guide Senior</a></li>
-<li><a class="hover:text-teal-700 dark:hover:text-teal-300 underline text-teal-800 dark:text-teal-200" href="#">Comparer maintenant</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="font-bold text-primary plus-jakarta">Légal</h4>
-<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-<li><a class="hover:text-teal-700 dark:hover:text-teal-300" href="#">Privacy Policy</a></li>
-<li><a class="hover:text-teal-700 dark:hover:text-teal-300" href="#">Terms of Service</a></li>
-<li><a class="hover:text-teal-700 dark:hover:text-teal-300" href="#">Legal Notice</a></li>
-<li><a class="hover:text-teal-700 dark:hover:text-teal-300" href="#">Security Standards</a></li>
-</ul>
-</div>
-<div class="space-y-4">
-<h4 class="font-bold text-primary plus-jakarta">Contact</h4>
-<ul class="space-y-2 text-sm text-slate-500 dark:text-slate-400">
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-xs">phone</span>
-                        0 800 00 00 00 (Gratuit)
-                    </li>
-<li class="flex items-center gap-2">
-<span class="material-symbols-outlined text-xs">mail</span>
-                        contact@serene-sentinel.fr
-                    </li>
-<li class="mt-4 pt-4 border-t border-slate-200">
-<span class="font-bold text-xs text-secondary uppercase tracking-widest">Support 24/7</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-xs text-slate-400">© 2024 Serene Sentinel Insurance. Certified Secure Comparison Tool. No-obligation quotes.</p>
-<div class="flex gap-6 opacity-50 grayscale">
-<span class="material-symbols-outlined text-4xl">verified_user</span>
-<span class="material-symbols-outlined text-4xl">lock</span>
-<span class="material-symbols-outlined text-4xl">encrypted</span>
-</div>
+<div class="mt-12 text-center border-t border-slate-200 dark:border-slate-800 pt-8">
+<p class="text-slate-500 font-inter body-md">© 2024 SeniorsCare Mutuelle. Protege et securise.</p>
 </div>
 </footer>
+<!-- Floating Form Widget -->
+<div class="fixed bottom-8 right-8 z-[100] flex flex-col items-end">
+<!-- Floating Form (Initially Hidden/Minimized - Controlled by CSS/Interaction state for prototype purposes it's visible here) -->
+<div class="bg-surface-container-lowest shadow-2xl rounded-2xl w-80 mb-4 border border-outline-variant/10 overflow-hidden transform transition-all duration-300" id="quoteForm">
+<div class="primary-gradient p-5 text-white flex justify-between items-center">
+<span class="font-bold">Quick Quote</span>
+<span class="material-symbols-outlined cursor-pointer hover:rotate-90 transition-transform">close</span>
+</div>
+<div class="p-6 space-y-4">
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Your Age</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary" placeholder="e.g. 65" type="number"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Current Coverage</label>
+<select class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary appearance-none">
+<option>None</option>
+<option>Basic</option>
+<option>Full</option>
+</select>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold text-on-surface-variant uppercase tracking-wider">Zip Code</label>
+<input class="w-full bg-surface-container-highest border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary" placeholder="75001" type="text"/>
+</div>
+<button class="w-full primary-gradient text-white py-4 rounded-md font-bold mt-2 shadow-lg shadow-primary/20">Next Step</button>
+</div>
+<div class="bg-surface-container-low px-6 py-3 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-green-500"></span>
+<span class="text-[10px] text-on-surface-variant font-bold uppercase tracking-tight">Expert online now</span>
+</div>
+</div>
+<!-- Floating Button -->
+<button class="primary-gradient text-white px-8 py-4 rounded-full font-bold shadow-2xl flex items-center gap-3 transform hover:scale-105 active:scale-95 transition-all group relative">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+            Get a Quote
+            <span class="material-symbols-outlined text-xl">contact_support</span>
+</button>
+</div>
 </body></html>
