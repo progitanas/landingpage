@@ -1227,13 +1227,14 @@
         });
 
         form.addEventListener("submit", function (event) {
-          event.preventDefault();
           if (!validateCurrentStep()) {
+            event.preventDefault();
             return;
           }
 
-          form.classList.add("hidden");
-          successMessage.classList.remove("hidden");
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Envoi en cours...";
+          setStepError("");
         });
 
         renderStep();
